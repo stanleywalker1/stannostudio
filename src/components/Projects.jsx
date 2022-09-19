@@ -8,21 +8,47 @@ import Synth from '../assets/synth.jpg'
 import Xfolio from '../assets/xfolio.jpg'
 import Emotion from '../assets/ee.jpg'
 import Coin from '../assets/coin.png'
+import HW1 from '../assets/HW1.png'
 import AuxVerse from '../assets/AuxVerse.png'
+import NYU from './NYU'
+import { Routes } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 
 const Projects = () => {
+    <Routes>
+         <Route path='/NYU' element={<NYU/>}/>
+    </Routes>
   return (
+    
     <div name='projects' className='w-full bg-[#0a192f] text-gray-300 py-4'>
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>Projects</p>
                 <p className='py-6'>Collection of freelance + university work</p>
-
             </div>
 
 {/* grid container */}
             <div 
                  className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+
+                    {/* project tile 1 */}
+                    <div style={{backgroundImage: `url(${HW1})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    
+                    <div className='opacity-0 text-center group-hover:opacity-100'>
+                        <span className='text-2xl  font-bold text-white tracking-wider'>
+                        NYU - Interactive Computing
+                        </span>
+                        <div className='pt-8 text-center'>
+
+                            <a href="/NYU">
+                                <button className='text-center rounded-lg px-9 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                NYU
+                                </button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
 
                      {/* project tile 1 */}
                     <div style={{backgroundImage: `url(${AuxVerse})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
