@@ -15,7 +15,7 @@ function App() {
       {/* https://www.youtube.com/watch?v=2kg0z1qNrkw */}
       <Navbar/>
       <Routes>
-        <Route path='NYU' element={<NYU/>}/>
+        <Route path='/NYU' element={<NYU/>}/>
       </Routes>
       <Background/>
       <Home/>
