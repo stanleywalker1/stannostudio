@@ -17,7 +17,7 @@ const Skills = () => {
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div>
                 <p className='text-4xl font-bold inline border-b-4 border-pink-600'>Skills</p>
-                <p className='py-4'>A of the classics</p>
+                <p className='py-4'>A few of the classics</p>
             </div>
 
             <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
@@ -41,7 +41,7 @@ const Skills = () => {
             {/* <a className="underline underline-offset-4 decoration-indigo-500 hover:decoration-4">Resume</a>  */}
            
                 <div className='flex sm:text-left text-lg font-bold font-mono'>
-                    <p>Incase you want edvidence here's my <a className="border bg-pink-600 border-slate-300 hover:border-pink-600" href="https://drive.google.com/file/d/1pu3HsDZ4dO2qFTx2cur342YFs_bAEDuU/view?usp=sharing" target="_blank" rel="noopener noreferrer"> resume</a>
+                    <p>Incase you want edvidence here's my <a className="border bg-pink-600 border-slate-300 hover:border-pink-600" href="https://drive.google.com/file/d/15U5_ygy44-oGOrjBcoBRwEP6O9PBCI1Y/view?usp=sharing" target="_blank" rel="noopener noreferrer"> resume</a>
 
                     </p>
 
