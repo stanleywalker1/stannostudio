@@ -1,15 +1,15 @@
 import React from 'react'
-import HTML from '../assets/html.png'
+// import HTML from '../assets/html.png'
 import CSS from '../assets/css.png'
 import GITHUB from '../assets/github.png'
 import JAVASCRIPT from '../assets/javascript.png'
 import REACT from '../assets/react.png'
 
-import {FaBars, FaTimes, FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaDochub} from 'react-icons/fa'
-import { HiOutlineMail } from 'react-icons/hi';
-import {BsFillPersonLinesFill} from 'react-icons/bs';
-import {CgFileDocument} from 'react-icons/cg';
-import { IconContext } from "react-icons";
+// import {FaBars, FaTimes, FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaDochub} from 'react-icons/fa'
+// import { HiOutlineMail } from 'react-icons/hi';
+// import {BsFillPersonLinesFill} from 'react-icons/bs';
+// import {CgFileDocument} from 'react-icons/cg';
+// import { IconContext } from "react-icons";
 
 const Skills = () => {
   return (
