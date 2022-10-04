@@ -22,7 +22,7 @@ const About = () => {
                    <p>Merging and exploring with tech, digital and physical. </p>
                 </div>
                 <div>
-                    <p className='font-mono'>Interactive technology enthusiasts. Building through a creative lens. Somewhere between New York City, Shanghai & Tel Aviv. 我还可以说中文哈哈. </p>
+                    <p className='font-mono'>Interactive technology enthusiasts. Building through a creative lens. Somewhere between New York City, Shanghai & Tel Aviv. 我还可以说中文. </p>
                 </div>
             </div>
             

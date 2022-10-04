@@ -15,7 +15,7 @@ const Index = () => {
       <Skills/>
       <Projects/>
       <Contact/>
-      </React.Fragment>
+    </React.Fragment>
     )
 }
 
