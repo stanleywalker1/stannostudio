@@ -10,6 +10,7 @@ import Emotion from '../assets/ee.jpg'
 import Coin from '../assets/coin.png'
 import HW1 from '../assets/HW1.png'
 import AuxVerse from '../assets/AuxVerse.png'
+import LedgerPad from '../assets/ledgerpad.png'
 import NYU from './NYU'
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
@@ -30,9 +31,9 @@ const Projects = () => {
 {/* grid container */}
             <div 
                  className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-
+                
                     {/* project tile 1 */}
-                    <div style={{backgroundImage: `url(${HW1})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                <div style={{backgroundImage: `url(${HW1})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     <div className='opacity-0 text-center group-hover:opacity-100'>
                         <span className='text-2xl  font-bold text-white tracking-wider'>
@@ -50,7 +51,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                     {/* project tile 1 */}
+                     {/* project tile 2 */}
                     <div style={{backgroundImage: `url(${AuxVerse})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
                     
@@ -64,6 +65,25 @@ const Projects = () => {
                                     Docs
                                     </button>
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* project tile 1 */}
+                    <div style={{backgroundImage: `url(${LedgerPad})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                        
+                        <div className='opacity-0 text-center group-hover:opacity-100'>
+                            <span className='text-2xl  font-bold text-white tracking-wider'>
+                            LedgerPad - NYU Innovation Course Product 
+                            </span>
+                            <div className='pt-8 text-center'>
+
+                                <a href="https://docs.google.com/presentation/d/138l7QXOH2RAtbRY_cB6eVd0q2ElzDSUg434O8_7VkRo/edit?usp=sharing">
+                                    <button className='text-center rounded-lg px-9 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                    Pitch Deck
+                                    </button>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
