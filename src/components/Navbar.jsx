@@ -77,6 +77,28 @@ const Navbar = () => {
                     Contact
                 </Link>
             </li>
+            <ul className='flex justify-between w-[260px] p-3 pt-5'>
+                <li className=''>
+                        <a  className='flex justify-between items-center w-full text-gray-300'
+                        href='https://github.com/stanleywalker1' target="_blank" rel="noopener noreferrer">
+                        <FaGithub size={30} />
+                        </a>
+                </li>
+                <li className=''>
+                        <a  className='flex justify-between items-center w-full text-gray-300'
+                        href='https://twitter.com/stannostudio' target="_blank" rel="noopener noreferrer">
+                            <FaTwitter size={30} />
+                        </a>
+                    </li>
+                <li className=''>
+                    <a  className='flex justify-between items-center w-full text-gray-300'
+                    href='https://www.instagram.com/stannostudio/' target="_blank" rel="noopener noreferrer">
+                        <FaInstagram size={30} />
+                    </a>
+                </li>
+            </ul>
+
+
         </ul>
 
         {/* Social Icons */}
