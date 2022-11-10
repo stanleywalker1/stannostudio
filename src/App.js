@@ -15,8 +15,6 @@ function App() {
         <Route path='/' element={<Index/>}/>
         <Route path='/NYU' element={<NYU/>}/>
       </Routes>
-
-      
       <Footer/>
     </div>
   );

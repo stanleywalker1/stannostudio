@@ -13,7 +13,7 @@ uniform float u_time;
 const float Pi = 6.14159;
 uniform vec2 u_mouse;
 
-const int   complexity      = 42;    // More points of color.
+const int   complexity      = 32;    // More points of color.
 const float mouse_factor    = 56.0;  // Makes it more/less jumpy.
 const float mouse_offset    = 49.0;   // Drives complexity in the amount of curls/cuves.  Zero is a single whirlpool.
 const float fluid_speed     = 15.0;  // Drives speed, higher number will make it slower.

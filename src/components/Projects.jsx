@@ -12,6 +12,7 @@ import HW1 from '../assets/HW1.png'
 import AuxVerse from '../assets/AuxVerse.png'
 import LedgerPad from '../assets/ledgerpad.png'
 import agar from '../assets/agar.png'
+import sandbox from '../assets/doodlePreview.png'
 import NYU from './NYU'
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
@@ -32,6 +33,27 @@ const Projects = () => {
 {/* grid container */}
             <div 
                  className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                
+                <div style={{backgroundImage: `url(${sandbox})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    <div className='opacity-0 text-center group-hover:opacity-100'>
+                        <span className='text-2xl  font-bold text-white tracking-wider'>
+                        Doodle Sandbox - Multiplayer
+                        </span>
+                        <div className='pt-8 text-center'>
+                        <a href="https://doodle-sandbox.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                    Live Demo
+                                    </button>
+                                </a>
+                        <a href="https://github.com/stanleywalker1/doodle-sandbox" target="_blank" rel="noopener noreferrer">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                            Github
+                            </button>
+                        </a>
+                            
+                        </div>
+                    </div>
+                </div>
 
                 <div style={{backgroundImage: `url(${agar})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                                     

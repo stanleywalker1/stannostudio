@@ -3,6 +3,7 @@ import HW1 from './HW1';
 import HW2 from './HW2';
 import Iframe from 'react-iframe';
 import agar from '../assets/agar.png'
+import sandbox from '../assets/doodlePreview.png'
 
 const NYU = () => {
 
@@ -90,7 +91,7 @@ const NYU = () => {
                   />
             </div> */}
 
-<div className='mt-[80px] sm:text-right text-1xl font-bold font-mono'>
+            <div className='mt-[80px] sm:text-right text-1xl font-bold font-mono'>
               <p>Interactive Computing: Project 4.0 </p>
             </div>
             <div>
@@ -115,6 +116,30 @@ const NYU = () => {
                 
                 <p className='pt-5 pr-10 pl-10 sm:text-left text-1xl font-mono'>Autonomous array of robots, with a new robot spawning every 4 seconds. Toggle with the arrows to change the direction flow and gain points by leading the robots to the green door on the right side of the factory. This project displays OOP practice and techniques. Optimized to avoid excessive memory use. Built with p5.js for Interactive Computing @ NYU. Try to see if you can build a solution to reset robots that get stuck in an arrow loop in the factory (I didn’t have enough time to implement this but understanding how to approach it is a good exercise).  </p>
              </div>
+
+             <div className='p-5 sm:text-right text-1xl font-bold font-mono'>
+               <p>Interactive Computing: Midterm Project </p>
+            </div>
+            <div style={{backgroundImage: `url(${sandbox})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'> 
+            <div className='opacity-0 text-center group-hover:opacity-100'>
+                <span className='text-2xl  font-bold text-white tracking-wider'>
+                Doodle Sandbox - Multiplayer
+                </span>
+                <div className='pt-8 text-center'>
+                <a href="https://doodle-sandbox.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                            Live Demo
+                            </button>
+                        </a>
+                <a href="https://github.com/stanleywalker1/doodle-sandbox" target="_blank" rel="noopener noreferrer">
+                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Github
+                    </button>
+                </a>
+                    
+                </div>
+             </div>
+            </div>
 
         </div>
     </div>
