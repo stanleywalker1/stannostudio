@@ -141,6 +141,17 @@ const NYU = () => {
              </div>
             </div>
 
+            <div className='mt-[80px] sm:text-right text-1xl font-bold font-mono'>
+              <p className='underline'>Interactive Computing: Final Proposal </p>
+            </div>
+            
+            <div className='p-10 sm:text-left text-1xl font-mono'>
+                <p className='pr-10 pl-10 sm:text-left text-1xl font-mono'>Nov 23, 2022</p>
+                <p className='pt-5 pr-10 pl-10 sm:text-left text-1xl font-mono'>Runner: Paula & Stanley </p>
+                <p className='pt-5 pr-10 pl-10 sm:text-left text-1xl font-mono'>Our idea is still in early development, but we’ve agreed on an infinite runner platform game in which, similarly to Mario and the pipes, the player can access occasionally appearing portals to transfer to a “different universe.” Each universe will contain a randomly generated environment from lists of different backgrounds, enemies, sprites, etc. Each round is meant to be as unique as possible. The goal of the game is to survive as long as one can and get a high score. As the player enters each different universe, the score is maintained, thus in the end it depends solely on how long they lasted; in other words, the varying universes do not impact the score, they are just an artistic feature. Power up’s will also be available, but their functions remain to be determined. Additionally, we plan on setting up a global leaderboard, in which anyone playing the game on the server can be featured if they score high enough! </p>
+                <p className='pt-5 pr-10 pl-10 sm:text-left text-1xl font-mono'>The mechanics will require multiple changing states and variables, especially in order to direct the environment and power ups. Enemies will likely have different capabilities and will thus each be a class of their own. Because we will have to find a good amount of externally sourced artwork with similar styles, our aesthetic will likely depend on the content we are able to collect. Based on past experience with this issue, pixelated art appears to be the most common and accessible, so this will likely be the case. However, the architecture of the map itself remains under consideration as neither of us have worked with platform games before. </p>
+            </div>
+
         </div>
     </div>
   )
