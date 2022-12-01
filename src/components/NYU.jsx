@@ -5,12 +5,13 @@ import Iframe from 'react-iframe';
 import agar from '../assets/agar.png'
 import sandbox from '../assets/doodlePreview.png'
 
+
 const NYU = () => {
 
   return (
     <div name='nyu' className='w-full h-full bg-[#0a192f] text-gray-300'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
-           
+      
             <div className='mt-[80px] pb-5 sm:text-right text-1xl font-bold font-mono'>
               <p>Interactive Computing: Project 1.0 </p>
             </div>
