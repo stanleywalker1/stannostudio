@@ -348,6 +348,10 @@ const Gallery = () => {
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
                        Lucid Doodle
                        </span>
+                       <div className='flex justify-between p-1'>  
+                       <p className='sm:text-left text-1xl font-mono'>Shangha, China</p>
+                       <p className='sm:text-left text-1xl font-mono'>Fall, 2018</p>
+                       </div>
                        <ul className="list-disc p-7 sm:text-left text-1xl font-mono">
                         <li className='sm:text-left text-base font-mono'>My first university project - an interactive LED table exploring human ineraction among a digital & physical interface</li>
                         <li className='sm:text-left text-base font-mono'>Lucid Doodle v2 implemented a time-reaction game mode for visitors to play</li>
