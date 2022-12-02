@@ -19,8 +19,7 @@ const Navbar = () => {
 
         {/* menu */}
         <ul className='hidden md:flex'>
-            <li>
-                <Link to="home" smooth={true} duration={500}>
+            {/* <li> <Link to="home" smooth={true} duration={500}>
                     Home
                 </Link>
             </li>
@@ -43,7 +42,32 @@ const Navbar = () => {
             <Link to="contact" smooth={true} duration={500} offset={-80}>
                     Contact
                 </Link>
+            </li> */}
+            <li>
+                <a href='https://stanno.us/'>
+                    Studio home
+                </a>
             </li>
+            <li>
+             <a  className='flex justify-between items-center w-full text-gray-300'
+                href='https://www.instagram.com/stannostudio/' target="_blank" rel="noopener noreferrer">
+                    <FaInstagram size={30} />
+                </a>
+             </li>
+
+            <li>
+            <a  className='flex justify-between items-center w-full text-gray-300'
+                    href='https://twitter.com/stannostudio' target="_blank" rel="noopener noreferrer">
+                        <FaTwitter size={30} />
+             </a>
+            </li>
+            <li>
+            <a  className='flex justify-between items-center w-full text-gray-300'
+                href='https://github.com/stanleywalker1' target="_blank" rel="noopener noreferrer">
+                <FaGithub size={30} />
+            </a>
+             </li>
+
         </ul>
         {/* hamburger menu */}
         <div onClick={handleClick} className='md:hidden z-10'>
@@ -102,7 +126,7 @@ const Navbar = () => {
         </ul>
 
         {/* Social Icons */}
-        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+        {/* <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
             <ul>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
                     <a  className='flex justify-between items-center w-full text-gray-300'
@@ -124,7 +148,7 @@ const Navbar = () => {
                 </li>
             </ul>
 
-        </div>
+        </div> */}
 
     
     </div>

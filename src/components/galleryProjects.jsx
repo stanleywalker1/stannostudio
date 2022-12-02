@@ -136,7 +136,7 @@ const Gallery = () => {
                        </span>
                        <div className='flex justify-between p-1'>  
                        <p className='sm:text-left text-1xl font-mono'>Shanghai, China</p>
-                       <p className='sm:text-left text-1xl font-mono'>May, 2021</p>
+                       <p className='sm:text-left text-1xl font-mono'>Dec, 2019</p>
                        </div>
                        <ul className="list-disc pt-2 pl-2 pb-2 sm:text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>A swarm of insect-like robots that explores human interaction</li>
@@ -264,15 +264,19 @@ const Gallery = () => {
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
                        Doodle Sandbox - Multiplayer
                        </span>
+                       <div className='flex justify-between p-1'>  
+                       <p className='sm:text-left text-1xl font-mono'>New York City, USA</p>
+                       <p className='sm:text-left text-1xl font-mono'>Nov, 2022</p>
+                       </div>
                        <ul className="list-disc pt-2 pl-2 pb-2 sm:text-left text-1xl text-gray-400">
-                        <li className='sm:text-left text-base font-mono'>Community-driven Ethereum wallet designed for simple digital asset and DeFi management </li>
-                        <li className='sm:text-left text-base font-mono'>Built as a Chrome extension while supporting all Ethereum networks, Decentralized Exchanges, and L2 rollups on both desktop and mobile </li>
-                        <li className='sm:text-left text-base font-mono'>Developed with Daniel Koshman as part of the ETH Global 2021 Hackathon</li>
+                        <li className='sm:text-left text-base font-mono'>An experimental canvas that lets vistors interact and draw with pixels within the same lobby</li>
+                        <li className='sm:text-left text-base font-mono'>Concept derived as a way to connect with my friends through a unique medium that does not have many gamified aspects - simply creative </li>
+                        <li className='sm:text-left text-base font-mono'>Developed in Interactive Computing with Professor Craig Kapp</li>
                        </ul>
                        <div className="mx-auto flex items-center justify-center">
                          <div className="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
                             <div className="flex h-full w-full items-center justify-center bg-gray-800 back">
-                             <h1 className="p-1 first-line:text-md font-black text-gray-300"> WebGL - React Three Fiber - Blender</h1>
+                             <h1 className="p-1 first-line:text-md font-black text-gray-300"> Javascript - p5 - socket.io</h1>
                             </div>
                          </div>
                         </div>
@@ -302,14 +306,19 @@ const Gallery = () => {
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
                        Agar.io Remix
                        </span>
-                       <ul className="list-disc p-7 sm:text-left text-1xl font-mono">
-                        <li className='sm:text-left text-base font-mono'>Now this is a story all about how, my life got flipped-turned upside down</li>
-                        <li className='sm:text-left text-base font-mono'>Now this is a story all about how, my life got</li>
+                       <div className='flex justify-between p-1'>  
+                       <p className='sm:text-left text-1xl font-mono'>New York City, USA</p>
+                       <p className='sm:text-left text-1xl font-mono'>Oct, 2022</p>
+                       </div>
+                       <ul className="list-disc pt-2 pl-2 pb-2 sm:text-left text-1xl text-gray-400">
+                        <li className='sm:text-left text-base font-mono'>A remix of the classic agar.io game exploring autonomous objects</li>
+                        <li className='sm:text-left text-base font-mono'>Demonstration of autonomous movenment with perlin generated randomness</li>
+                        <li className='sm:text-left text-base font-mono'>Developed in Interactive Computing with Professor Craig Kapp</li>
                        </ul>
                        <div className="mx-auto flex items-center justify-center">
                          <div className="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
                             <div className="flex h-full w-full items-center justify-center bg-gray-800 back">
-                             <h1 className="p-1 first-line:text-md font-black text-gray-300"> WebGL - React Three Fiber - Blender</h1>
+                             <h1 className="p-1 first-line:text-md font-black text-gray-300"> Javascript - p5</h1>
                             </div>
                          </div>
                         </div>
@@ -340,13 +349,15 @@ const Gallery = () => {
                        Lucid Doodle
                        </span>
                        <ul className="list-disc p-7 sm:text-left text-1xl font-mono">
-                        <li className='sm:text-left text-base font-mono'>Now this is a story all about how, my life got flipped-turned upside down</li>
-                        <li className='sm:text-left text-base font-mono'>Now this is a story all about how, my life got</li>
+                        <li className='sm:text-left text-base font-mono'>My first university project - an interactive LED table exploring human ineraction among a digital & physical interface</li>
+                        <li className='sm:text-left text-base font-mono'>Lucid Doodle v2 implemented a time-reaction game mode for visitors to play</li>
+                        <li className='sm:text-left text-base font-mono'>Lucid Doodle v3 implemented machine learning and voice control - enabling the ability to control the lights through speech from a collecition of modes such as "water" and "fire"</li>
+                        <li className='sm:text-left text-base font-mono'>Developed in Interaction Lab with Professor Rodolfo Cossovich</li>
                        </ul>
                        <div className="mx-auto flex items-center justify-center">
                          <div className="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
                             <div className="flex h-full w-full items-center justify-center bg-gray-800 back">
-                             <h1 className="p-1 first-line:text-md font-black text-gray-300"> WebGL - React Three Fiber - Blender</h1>
+                             <h1 className="p-1 first-line:text-md font-black text-gray-300"> p5 - Processing - Arduino - Machine Learning</h1>
                             </div>
                          </div>
                         </div>
