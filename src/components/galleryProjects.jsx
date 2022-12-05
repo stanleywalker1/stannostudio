@@ -96,7 +96,7 @@ const Gallery = () => {
                        <ul className="list-disc pt-2 pl-2 pb-2 sm:text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>Interactive system that expresses the sentiment of Twitter posts artistically</li>
                         <li className='sm:text-left text-base font-mono'>Experience the emotions of tweets in real-time and explore the tone of Twitter trends</li>
-                        <li className='sm:text-left text-base font-mono'>Adapted to analyze historic tweets within a 7-day timeframe, in addtion to a Unity output tool for experimenting with 3D visuals</li>
+                        <li className='sm:text-left text-base font-mono'>Adapted to analyze historic tweets within a 7-day timeframe, in addition to a Unity output tool for experimenting with 3D visuals</li>
                         <li className='sm:text-left text-base font-mono'>Developed in Responsive Environments led by Professor Stavros Didakis</li>
                         <li className='sm:text-left text-base font-mono'>Showcased in BlockCreateArt Scholarship Gallery</li>
 
@@ -143,7 +143,7 @@ const Gallery = () => {
                         <li className='sm:text-left text-base font-mono'>Exhibited to the public at the FutureLab West Bund Museum Shanghai and the Machine Art Symposium at New York University Shanghai</li>
                         <li className='sm:text-left text-base font-mono'>Associted peer-revied publication in the Association for Computing Machinery:
                         <p className="italic">Exploration into Perception of Robotic Agency</p></li>
-                        <li className='sm:text-left text-base font-mono'>Developed in Intro to Roboitcs with Professor Rodolfo Cossovich</li>
+                        <li className='sm:text-left text-base font-mono'>Developed in Intro to Robotics with Professor Rodolfo Cossovich</li>
                        </ul>
                        <div className="mx-auto flex items-center justify-center">
                          <div className="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
@@ -185,8 +185,8 @@ const Gallery = () => {
                        </div>
                        <ul className="list-disc pt-2 pl-2 pb-2 sm:text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>Develop a 3D environment to collaboratively listen to music with people globally by connecting various technology stacks </li>
-                        <li className='sm:text-left text-base font-mono'>Visitors join a central lobby where they can roam around the scenic space and add songs to the queue, as well as vote which songs to be played next</li>
-                        <li className='sm:text-left text-base font-mono'>Each visitors camera is mapped onto there player, enabling the feeling of virtual listening party</li>
+                        <li className='sm:text-left text-base font-mono'>Visitors join a central lobby where they can roam around the scenic space and add songs to the queue, as well as vote on which songs to be played next</li>
+                        <li className='sm:text-left text-base font-mono'>Each visitors camera is mapped onto their player, enabling the feeling of a virtual listening party</li>
                         <li className='sm:text-left text-base font-mono'>Developed in Real-Time Social Spaces at ITP</li>
                        </ul>
                        <div className="mx-auto flex items-center justify-center">
@@ -269,7 +269,7 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>Nov, 2022</p>
                        </div>
                        <ul className="list-disc pt-2 pl-2 pb-2 sm:text-left text-1xl text-gray-400">
-                        <li className='sm:text-left text-base font-mono'>An experimental canvas that lets vistors interact and draw with pixels within the same lobby</li>
+                        <li className='sm:text-left text-base font-mono'>An experimental canvas that lets visitors interact and draw with pixels within the same lobby</li>
                         <li className='sm:text-left text-base font-mono'>Concept derived as a way to connect with my friends through a unique medium that does not have many gamified aspects - simply creative </li>
                         <li className='sm:text-left text-base font-mono'>Developed in Interactive Computing with Professor Craig Kapp</li>
                        </ul>
@@ -312,7 +312,7 @@ const Gallery = () => {
                        </div>
                        <ul className="list-disc pt-2 pl-2 pb-2 sm:text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>A remix of the classic agar.io game exploring autonomous objects</li>
-                        <li className='sm:text-left text-base font-mono'>Demonstration of autonomous movenment with perlin generated randomness</li>
+                        <li className='sm:text-left text-base font-mono'>Demonstration of autonomous movement with perlin generated randomness</li>
                         <li className='sm:text-left text-base font-mono'>Developed in Interactive Computing with Professor Craig Kapp</li>
                        </ul>
                        <div className="mx-auto flex items-center justify-center">
@@ -353,9 +353,9 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>Fall, 2018</p>
                        </div>
                        <ul className="list-disc p-7 sm:text-left text-1xl font-mono">
-                        <li className='sm:text-left text-base font-mono'>My first university project - an interactive LED table exploring human ineraction among a digital & physical interface</li>
+                        <li className='sm:text-left text-base font-mono'>My first university project - an interactive LED table exploring human interaction among a digital & physical interface</li>
                         <li className='sm:text-left text-base font-mono'>Lucid Doodle v2 implemented a time-reaction game mode for visitors to play</li>
-                        <li className='sm:text-left text-base font-mono'>Lucid Doodle v3 implemented machine learning and voice control - enabling the ability to control the lights through speech from a collecition of modes such as "water" and "fire"</li>
+                        <li className='sm:text-left text-base font-mono'>Lucid Doodle v3 implemented machine learning and voice control - enabling the ability to control the lights through speech from a collection of modes such as "water" and "fire"</li>
                         <li className='sm:text-left text-base font-mono'>Developed in Interaction Lab with Professor Rodolfo Cossovich</li>
                        </ul>
                        <div className="mx-auto flex items-center justify-center">
