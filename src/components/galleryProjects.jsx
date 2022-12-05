@@ -366,7 +366,7 @@ const Gallery = () => {
                          </div>
                         </div>
                        <div className='pt-4 text-center'>
-                            <a href="https://dissrup.com/drops/synth-boi" target="_blank" rel="noopener noreferrer">
+                            <a href="https://candied-primula-8e4.notion.site/Lucid-Doodle-57514e11ed67462db321c24ed4827903" target="_blank" rel="noopener noreferrer">
                                 <button className='text-center rounded-lg px-9 py-2 m-2 bg-white text-gray-700 font-bold text-lg'>
                                 Docs
                                 </button>
