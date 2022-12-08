@@ -153,6 +153,47 @@ const NYU = () => {
                 <p className='pt-5 pr-10 pl-10 sm:text-left text-1xl font-mono'>The mechanics will require multiple changing states and variables, especially in order to direct the environment and power ups. Enemies will likely have different capabilities and will thus each be a class of their own. Because we will have to find a good amount of externally sourced artwork with similar styles, our aesthetic will likely depend on the content we are able to collect. Based on past experience with this issue, pixelated art appears to be the most common and accessible, so this will likely be the case. However, the architecture of the map itself remains under consideration as neither of us have worked with platform games before. </p>
             </div>
 
+            <div className='mt-[80px] sm:text-right text-1xl font-bold font-mono'>
+              <p className='underline'>Interactive Computing: Final Update #1 </p>
+            </div>
+            
+            <div className='p-10 sm:text-left text-1xl font-mono'>
+                <p className='pr-10 pl-10 sm:text-left text-1xl font-mono'>Nov 30, 2022</p>
+                <p className='pt-5 pr-10 pl-10 sm:text-left text-1xl font-mono'>Start screen is coming together (hooray for custom background art!)
+                </p>
+                <p className='pt-5 pr-10 pl-10 sm:text-left text-1xl font-mono'>Basic mechanics + rules established:</p>
+                <ul className='pr-10 pl-10 sm:text-left text-1xl font-mono'>
+                  <p className='pr-10 pl-10 sm:text-left text-1xl font-mono'>
+                  - Infinite runner: score kept by constantly increasing var, animated runners using spreadsheet
+                  </p>
+                  <p className='pr-10 pl-10 sm:text-left text-1xl font-mono'>
+                  - End game when collision with enemy or obstacle occurs
+                  </p>
+                  <p className='pr-10 pl-10 sm:text-left text-1xl font-mono'>
+                  - Possibility of multiple lives will be considered depending on final difficulty 
+                  </p>
+                  <p className='pr-10 pl-10 sm:text-left text-1xl font-mono'>
+                  - Accessing portals will change the state from 0 to 1, causing the environment’s characteristics to be reshuffled
+                  </p>
+                  <p className='pr-10 pl-10 sm:text-left text-1xl font-mono'>
+                  - Different arrays for different versions of each element type (background, characters, etc)
+                  </p>
+                </ul>
+            </div>
+
+            <div className='mt-[80px] sm:text-right text-1xl font-bold font-mono'>
+              <p className='underline'>Interactive Computing: Final Update #2 </p>
+            </div>
+            
+            <div className='p-10 sm:text-left text-1xl font-mono'>
+                <p className='pr-10 pl-10 sm:text-left text-1xl font-mono'>Dec 7, 2022</p>
+                <p className='pt-5 pr-10 pl-10 sm:text-left text-1xl font-mono'>Runner: Paula & Stanley </p>
+                <p className='pt-5 pr-10 pl-10 sm:text-left text-1xl font-mono'>We have added a new gameplay mode with sample graphics, which includes an environment for the player and moving platforms. The current graphics are acting as placeholders that will be replaced with more polished graphics in a later update. This gameplay mode intends to be built soon to include different modes in the flow direction of the game and provide a more engaging experience for players. </p>
+                <p className='pt-5 pr-10 pl-10 sm:text-left text-1xl font-mono'>Additionally, we have implemented simple control mechanics for the player to jump on platforms and to avoid  ~ soon to come ~ obstacles. The controls are mapped to keyboard keys with plans to include a motion detection option to control your player with your hands as well. 
+                We want players to interact with the game in a more engaging and immersive way.
+                Overall, these updates to our project provide a route for a more polished and engaging experience for players with a environment template to build from and improved controls. 
+                </p>
+            </div>
         </div>
     </div>
   )

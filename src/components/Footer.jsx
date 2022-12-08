@@ -10,11 +10,20 @@ const Footer = () => {
         {/* menu */}
         <ul >
             <li>
-                <Link className='flex row items-center text-pink-600'to="home" smooth={true} duration={500}>
-                    Back to the top<FaArrowUp className='ml-3'/>
+                <Link
+                    to="/"
+                    onClick={() => { window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                        }); }}
+                    className='flex row items-center text-pink-600'> Back to the top<FaArrowUp className='ml-3'/>
                 </Link>
+                
+                
             </li>
         </ul>
+        
     </div>
   )
 }
