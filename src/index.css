@@ -17,6 +17,8 @@
         @apply px-4;
         /* @apply cursor-pointer; */
         font-size: 1.4rem;
+        @apply pl-2;
+        @apply pr-2;
         /* font-family: 'Montserrat', sans-serif; */
     }
 }

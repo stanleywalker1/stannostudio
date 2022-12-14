@@ -40,7 +40,7 @@ const Gallery = () => {
         {/* grid container */}
             <div className='grid sm:grid-cols-1 md:grid-cols-1 gap-6'>
                  {/* project tile 2 */}
-                 <div className='flex-col flex md:flex-row shadow-lg shadow-[#040c16] group container rounded-md mx-auto '>
+                 <div className='flex-col flex md:flex-row bg-slate-800/70 shadow-lg shadow-[#040c16] group container rounded-md mx-auto '>
                     {/* hover effect */}  
                    <div className='text-center basis-1/2 p-3'>
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
@@ -51,7 +51,7 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>Nov, 2022</p>
                        </div>
                       
-                       <ul className="list-disc pt-2 pl-2 pb-2 text-left text-1xl text-gray-400">
+                       <ul className="list-disc pt-2 pl-5 pb-2 text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>Experimented with WebGL and physic libraries to develop a curated interactive storefront for Dissrup Ltd</li>
                         <li className='sm:text-left text-base font-mono'>Art collection by LIŔONA and hand-crafted by Love Hultén</li>
                         <li className='sm:text-left text-base font-mono'> Drove $700K in sales for the professional artists in ~20 minutes</li>
@@ -87,7 +87,7 @@ const Gallery = () => {
 {/* ********************************** Next Grid Item ********************************************** */}      
 
                  {/* project tile 2 */}
-                 <div className='flex-col flex md:flex-row shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
+                 <div className='flex-col flex md:flex-row bg-slate-800/70 shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
                     {/* hover effect */}  
                    <div className='text-center basis-1/2 p-3'>
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
@@ -97,7 +97,7 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>Shanghai, China</p>
                        <p className='sm:text-left text-1xl font-mono'>May, 2021</p>
                        </div>
-                       <ul className="list-disc pt-2 pl-2 pb-2 text-left text-1xl text-gray-400">
+                       <ul className="list-disc pt-2 pl-5 pb-2 text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>Interactive system that expresses the sentiment of Twitter posts artistically</li>
                         <li className='sm:text-left text-base font-mono'>Experience the emotions of tweets in real-time and explore the tone of Twitter trends</li>
                         <li className='sm:text-left text-base font-mono'>Adapted to analyze historic tweets within a 7-day timeframe, in addition to a Unity output tool for experimenting with 3D visuals</li>
@@ -132,7 +132,7 @@ const Gallery = () => {
                </div>    
 
 {/* ********************************** Next Grid Item ********************************************** */}
-<div className='flex-col flex md:flex-row shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
+<div className='flex-col flex md:flex-row bg-slate-800/70 shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
                     {/* hover effect */}  
                    <div className='text-center basis-1/2 p-3'>
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
@@ -142,7 +142,7 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>Shanghai, China</p>
                        <p className='sm:text-left text-1xl font-mono'>Dec, 2019</p>
                        </div>
-                       <ul className="list-disc pt-2 pl-2 pb-2 text-left text-1xl text-gray-400">
+                       <ul className="list-disc pt-2 pl-5 pb-2 text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>A swarm of insect-like robots that explores human interaction</li>
                         <li className='sm:text-left text-base font-mono'>Exhibited to the public at the FutureLab West Bund Museum Shanghai and the Machine Art Symposium at New York University Shanghai</li>
                         <li className='sm:text-left text-base font-mono'>Associted peer-revied publication in the Association for Computing Machinery:
@@ -177,7 +177,7 @@ const Gallery = () => {
                </div>                                      
 
 {/* ********************************** Next Grid Item ********************************************** */}
-<div className='flex-col flex md:flex-row shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
+<div className='flex-col flex md:flex-row bg-slate-800/70 shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
                     {/* hover effect */}  
                    <div className='text-center basis-1/2 p-3'>
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
@@ -187,7 +187,7 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>New York City, USA</p>
                        <p className='sm:text-left text-1xl font-mono'>March, 2022</p>
                        </div>
-                       <ul className="list-disc pt-2 pl-2 pb-2 text-left text-1xl text-gray-400">
+                       <ul className="list-disc pt-2 pl-5 pb-2 text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>Develop a 3D environment to collaboratively listen to music with people globally by connecting various technology stacks </li>
                         <li className='sm:text-left text-base font-mono'>Visitors join a central lobby where they can roam around the scenic space and add songs to the queue, as well as vote on which songs to be played next</li>
                         <li className='sm:text-left text-base font-mono'>Each visitors camera is mapped onto their player, enabling the feeling of a virtual listening party</li>
@@ -219,7 +219,7 @@ const Gallery = () => {
 
 
 {/* ********************************** Next Grid Item ********************************************** */}
-<div className='flex-col flex md:flex-row shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
+<div className='flex-col flex md:flex-row bg-slate-800/70 shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
                     {/* hover effect */}  
                    <div className='text-center basis-1/2 p-3'>
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
@@ -229,7 +229,7 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>Remote: Shanghai, Moscow</p>
                        <p className='sm:text-left text-1xl font-mono'>July, 2021</p>
                        </div>
-                       <ul className="list-disc pt-2 pl-2 pb-2 text-left text-1xl text-gray-400">
+                       <ul className="list-disc pt-2 pl-5 pb-2 text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>Community-driven Ethereum wallet designed for simple digital asset and DeFi management </li>
                         <li className='sm:text-left text-base font-mono'>Built as a Chrome extension while supporting all Ethereum networks, Decentralized Exchanges, and L2 rollups on both desktop and mobile </li>
                         <li className='sm:text-left text-base font-mono'>Developed with Daniel Koshman as part of the ETH Global 2021 Hackathon</li>
@@ -262,7 +262,7 @@ const Gallery = () => {
                </div>  
                  
 {/* ********************************** Next Grid Item ********************************************** */}      
-<div className='flex-col flex md:flex-row shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
+<div className='flex-col flex md:flex-row bg-slate-800/70 shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
                     {/* hover effect */}  
                    <div className='text-center basis-1/2 p-3'>
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
@@ -272,7 +272,7 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>New York City, USA</p>
                        <p className='sm:text-left text-1xl font-mono'>Nov, 2022</p>
                        </div>
-                       <ul className="list-disc pt-2 pl-2 pb-2 text-left text-1xl text-gray-400">
+                       <ul className="list-disc pt-2 pl-5 pb-2 text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>An experimental canvas that lets visitors interact and draw with pixels within the same lobby</li>
                         <li className='sm:text-left text-base font-mono'>Concept derived as a way to connect with my friends through a unique medium that does not have many gamified aspects - simply creative </li>
                         <li className='sm:text-left text-base font-mono'>Developed in Interactive Computing with Professor Craig Kapp</li>
@@ -304,7 +304,7 @@ const Gallery = () => {
                </div>  
                  
 {/* ********************************** Next Grid Item ********************************************** */}      
-<div className='flex-col flex md:flex-row shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
+<div className='flex-col flex md:flex-row bg-slate-800/70 shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
                     {/* hover effect */}  
                    <div className='text-center basis-1/2 p-3'>
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
@@ -314,7 +314,7 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>New York City, USA</p>
                        <p className='sm:text-left text-1xl font-mono'>Oct, 2022</p>
                        </div>
-                       <ul className="list-disc pt-2 pl-2 pb-2 text-left text-1xl text-gray-400">
+                       <ul className="list-disc pt-2 pl-5 pb-2 text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>A remix of the classic agar.io game exploring autonomous objects</li>
                         <li className='sm:text-left text-base font-mono'>Demonstration of autonomous movement with perlin generated randomness</li>
                         <li className='sm:text-left text-base font-mono'>Developed in Interactive Computing with Professor Craig Kapp</li>
@@ -346,7 +346,7 @@ const Gallery = () => {
                </div>  
                  
 {/* ********************************** Next Grid Item ********************************************** */}      
-<div className='flex-col flex md:flex-row shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
+<div className='flex-col flex md:flex-row bg-slate-800/70 first-letter:shadow-lg shadow-[#040c16] group container rounded-md mx-auto'>
                     {/* hover effect */}  
                    <div className='text-center basis-1/2 p-3'>
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
@@ -356,7 +356,7 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>Shangha, China</p>
                        <p className='sm:text-left text-1xl font-mono'>Fall, 2018</p>
                        </div>
-                       <ul className="list-disc p-7 text-left text-1xl font-mono text-gray-400">
+                       <ul className="list-disc pt-2 pl-5 pb-2 text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>My first university project - an interactive LED table exploring human interaction among a digital & physical interface</li>
                         <li className='sm:text-left text-base font-mono'>Lucid Doodle v2 implemented a time-reaction game mode for visitors to play</li>
                         <li className='sm:text-left text-base font-mono'>Lucid Doodle v3 implemented machine learning and voice control - enabling the ability to control the lights through speech from a collection of modes such as "water" and "fire"</li>
@@ -385,10 +385,14 @@ const Gallery = () => {
                </div>   
 
             </div>
+            <div className='flex justify-center p-4'>
+               
+                <p className='p-6 text-2xl'>~ Some additional projects and research ~</p>
+            </div>
                 
 {/* ********************************** 2 x 2 Grid Items ********************************************** */}      
 
-               <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4 p-4 pt-10'>
+               <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4 p-4'>
 
                <div style={{backgroundImage: `url(${temples})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center object-left-top  mx-auto content-div'>
                     <div className='opacity-0 text-center group-hover:opacity-100'>
