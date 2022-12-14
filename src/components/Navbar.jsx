@@ -67,6 +67,12 @@ const Navbar = () => {
                 <FaGithub size={30} />
             </a>
              </li>
+             <li>
+                    <a  className='flex justify-between items-center w-full text-gray-300'
+                    href='https://www.linkedin.com/in/stanley-virgint-933b3813b/' target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin size={30} />
+                    </a>
+                </li>
 
         </ul>
         {/* hamburger menu */}
@@ -75,8 +81,9 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu */}
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-            <li className='py-6 text-4xl'>
+        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>     
+            
+            {/* <li className='py-6 text-4xl'>
             <Link onClick={handleClick} to="home" smooth={true} duration={500}>
                     Home
                 </Link>
@@ -100,8 +107,42 @@ const Navbar = () => {
             <Link onClick={handleClick} to="contact" smooth={true} duration={500} offset={-80}>
                     Contact
                 </Link>
+            </li> */}
+
+           
+            <li className='py-6 text-4xl'>
+                        <a  className='flex justify-between items-center w-full text-gray-300'
+                        href='https://github.com/stanleywalker1' target="_blank" rel="noopener noreferrer">
+                        <FaGithub size={30} />
+                        </a>
+                </li>
+                <li className='py-6 text-4xl'>
+                        <a  className='flex justify-between items-center w-full text-gray-300'
+                        href='https://twitter.com/stannostudio' target="_blank" rel="noopener noreferrer">
+                            <FaTwitter size={30} />
+                        </a>
+                    </li>
+                <li className='py-6 text-4xl'>
+                    <a  className='flex justify-between items-center w-full text-gray-300'
+                    href='https://www.instagram.com/stannostudio/' target="_blank" rel="noopener noreferrer">
+                        <FaInstagram size={30} />
+                    </a>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <a  className='flex justify-between items-center w-full text-gray-300'
+                    href='https://www.linkedin.com/in/stanley-virgint-933b3813b/' target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin size={30} />
+                    </a>
+                </li>
+               
+            <li className='py-6 text-4xl'>
+                <a href='https://stanno.us/'>
+                    Studio home
+                </a>
             </li>
-            <ul className='flex justify-between w-[260px] p-3 pt-5'>
+
+                
+            {/* <ul className='flex justify-between w-[260px] p-3 pt-5'>
                 <li className=''>
                         <a  className='flex justify-between items-center w-full text-gray-300'
                         href='https://github.com/stanleywalker1' target="_blank" rel="noopener noreferrer">
@@ -120,7 +161,7 @@ const Navbar = () => {
                         <FaInstagram size={30} />
                     </a>
                 </li>
-            </ul>
+            </ul> */}
 
 
         </ul>
