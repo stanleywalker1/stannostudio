@@ -49,3 +49,7 @@
     @apply pb-2;
 
 }
+
+.gallery {
+    @apply hover:scale-105 transition duration-300 ease-in-out;
+}

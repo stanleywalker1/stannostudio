@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 // import WorkIMG from '../assets/workImg.jpg'
 import Green from '../assets/green.jpg'
 import Lucid from '../assets/lucidProfile.jpg'
@@ -26,6 +26,58 @@ const Gallery = () => {
     <Routes>
          <Route path='/NYU' element={<NYU/>}/>
     </Routes>
+
+
+
+
+
+
+
+function Collapse({ children }) {
+    const [collapsed, setCollapsed] = useState(true);
+  
+    return (
+      <div className="relative">
+        <button
+          className="relative z-10 block text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+          onClick={() => setCollapsed(!collapsed)}
+          aria-expanded={!collapsed}
+        >
+          
+          <svg
+            className="w-4 h-4 fill-current transition duration-300 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </button>
+        <div
+          className={`${
+            collapsed ? 'block' : 'hidden'
+          } transition duration-150 ease-in-out`}
+        >
+          {children}
+        </div>
+      </div>
+    );
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     
     <div name='projects' className='w-full bg-[#0a192f] text-gray-300 py-4'>
@@ -34,6 +86,7 @@ const Gallery = () => {
                 <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>Projects</p>
                 <p className='py-6'>Collection of freelance + university work</p>
             </div>
+            
                 
 {/* ********************************** Next Grid Item ********************************************** */}      
 
@@ -41,8 +94,14 @@ const Gallery = () => {
             <div className='grid sm:grid-cols-1 md:grid-cols-1 gap-6'>
                  {/* project tile 2 */}
                  <div className='flex-col flex md:flex-row bg-slate-800/70 shadow-lg shadow-[#040c16] group container rounded-md mx-auto '>
+                    
+                    
                     {/* hover effect */}  
                    <div className='text-center basis-1/2 p-3'>
+                 
+
+
+
                        <span className='text-2xl font-bold border-b-2 text-gray-300 border-blue-300 tracking-wider'>
                            Synth#Boi Storefront
                        </span>
@@ -50,7 +109,7 @@ const Gallery = () => {
                        <p className='sm:text-left text-1xl font-mono'>Tel Aviv, Israel</p>
                        <p className='sm:text-left text-1xl font-mono'>Nov, 2022</p>
                        </div>
-                      
+                     {/* <Collapse> future plans to make cards collapsible */}
                        <ul className="list-disc pt-2 pl-5 pb-2 text-left text-1xl text-gray-400">
                         <li className='sm:text-left text-base font-mono'>Experimented with WebGL and physic libraries to develop a curated interactive storefront for Dissrup Ltd</li>
                         <li className='sm:text-left text-base font-mono'>Art collection by LIŔONA and hand-crafted by Love Hultén</li>
@@ -60,8 +119,8 @@ const Gallery = () => {
                            Wall Street Journal 
                         </a>
                        </li>
-                        
                        </ul>
+                       {/* </Collapse> */}
                        <div className="mx-auto flex items-center justify-center">
                          <div className="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
                             <div className="flex h-full w-full items-center justify-center bg-gray-800 back">

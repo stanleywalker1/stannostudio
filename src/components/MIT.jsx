@@ -48,35 +48,35 @@ const MIT = () => {
                 <div className="flex flex-wrap -m-1 md:-m-2">
                 <div className="flex flex-wrap w-1/3">
                     <div className="w-full p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg "
                         src={synth}/>
-                    </div>
+                           </div>
                     <div className="w-full p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
                         src={EEUkraine}/>
                     </div>
                 </div>
 
                 <div className="flex flex-wrap w-1/3">
                  <div className="w-1/2 p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
                         src={ColorCircles}/>
                     </div>
                     <div className="w-1/2 p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
                         src={lucid}/>
                     </div>
 
                     <div className="w-full p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
                         src={spineI}/>
                     </div>
                     <div className="w-1/2 p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
                         src={noodle}/>
                     </div>
                     <div className="w-1/2 p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
                         src={circle}/>
                     </div>
                 </div>
@@ -84,19 +84,19 @@ const MIT = () => {
 
                 <div className="flex flex-wrap w-1/3">
                     <div className="w-full p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
                         src={eeGif}/>
                     </div>
                     <div className="w-1/2 p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
                         src={waterpaint}/>
                     </div>
                     <div className="w-1/2 p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
                         src={dalle}/>
                     </div>
                     <div className="w-full p-1 md:p-2">
-                    <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
+                    <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
                         src={Robo}/>
                     </div>
                 </div>
