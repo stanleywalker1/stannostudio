@@ -28,6 +28,8 @@ import colormush from '../assets/gallery/colormush.png';
 import Robo from '../assets/robo.jpg'
 import stannoProfile from '../assets/stannoProfile.png'
 
+
+
 const MIT = () => {
 
   return (
@@ -112,14 +114,14 @@ const MIT = () => {
                 <div className='sm:text-right pl-4 pr-4 pb-8 flex flex-col'>
                     {/* <div className=''> */}
                             <img src={stannoProfile} alt="Logo Image" style={{width: '100px'}}/>
-                            <p className='text-3xl px-4 pb-4 font-bold underline underline-offset-4 decoration-pink-600'>
+                            <p className=' text-3xl px-4 pb-4 font-bold underline underline-offset-4 decoration-pink-600'>
                                 About
                             </p>
                            
                     {/* </div> */}
                 </div>
                 <div>
-                <p className='sm:text-left text-1xl pr-4 font-mono text-gray-400'>
+                <p className='paragraph sm:text-left text-1xl pr-4 font-mono text-gray-400'>
                 Hi! My name is Stanley. I’m passionate about interactive technologies and immersing myself in diverse cultures and people. I love exploring mediums for creative design with emerging and experimental technologies, both digital and physical. I am fortunate  to have experience in various ecosystems that I attribute to my creativity, including Shanghai, Tel Aviv, and New York City, with an additional 50+ countries explored. 
 
 MIT Media Lab has always been a dream of mine since I discovered it as a child when learning Scratch and its roots with Professor Mitchel Resnick. This interest expanded during my time at NYU’s Interactive Media Arts Program in Shanghai and Interactive Telecommunications Program in New York City. Thank you in advance for your time and attention and I hope you enjoy the highlights of my work. 

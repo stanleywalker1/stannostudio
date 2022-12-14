@@ -1,9 +1,9 @@
 import React from 'react'
-import WorkIMG from '../assets/workImg.jpg'
+// import WorkIMG from '../assets/workImg.jpg'
 import Green from '../assets/green.jpg'
 import Lucid from '../assets/lucidProfile.jpg'
 import Robo from '../assets/robo.jpg'
-import Rover from '../assets/rover.jpg'
+// import Rover from '../assets/rover.jpg'
 import Synth from '../assets/synth.jpg'
 import Xfolio from '../assets/xfolio.jpg'
 import Emotion from '../assets/ee.jpg'
@@ -13,6 +13,9 @@ import AuxVerse from '../assets/AuxVerse.png'
 import LedgerPad from '../assets/ledgerpad.png'
 import agar from '../assets/agar.png'
 import sandbox from '../assets/doodlePreview.png'
+import firefly from '../assets/firefly.png'
+import flashlight from '../assets/flashlight-draw.png'
+import temples from '../assets/temples.png'
 import NYU from './NYU'
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
@@ -33,6 +36,64 @@ const Projects = () => {
 {/* grid container */}
             <div 
                  className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+
+                <div style={{backgroundImage: `url(${temples})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    <div className='opacity-0 text-center group-hover:opacity-100'>
+                        <span className='text-2xl  font-bold text-white tracking-wider'>
+                        NYC synagogue map of the past
+                        </span>
+                        <div className='pt-8 text-center'>
+                        <a href="https://stanno.us/jewsofnewyork" target="_blank" rel="noopener noreferrer">
+                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                    Demo + Writing
+                                    </button>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style={{backgroundImage: `url(${flashlight})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    <div className='opacity-0 text-center group-hover:opacity-100'>
+                        <span className='text-2xl  font-bold text-white tracking-wider'>
+                        Flashlight Drawing Canvas
+                        </span>
+                        <div className='pt-8 text-center'>
+                        <a href="https://flashdraw.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                    Live Demo
+                                    </button>
+                                </a>
+                        <a href="https://github.com/stanleywalker1/flashlight-drawing-space" target="_blank" rel="noopener noreferrer">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                            Github
+                            </button>
+                        </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div style={{backgroundImage: `url(${firefly})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    <div className='opacity-0 text-center group-hover:opacity-100'>
+                        <span className='text-2xl  font-bold text-white tracking-wider'>
+                        VR Firefly Sky
+                        </span>
+                        <div className='pt-8 text-center'>
+                        <a href="https://firefly-vr.netlify.app/index.html" target="_blank" rel="noopener noreferrer">
+                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                    Live Demo
+                                    </button>
+                                </a>
+                        <a href="https://github.com/stanleywalker1/fireflies" target="_blank" rel="noopener noreferrer">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                            Github
+                            </button>
+                        </a>
+                            
+                        </div>
+                    </div>
+                </div>
                 
                 <div style={{backgroundImage: `url(${sandbox})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     <div className='opacity-0 text-center group-hover:opacity-100'>
