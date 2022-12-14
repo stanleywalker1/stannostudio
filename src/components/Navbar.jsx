@@ -141,6 +141,12 @@ const Navbar = () => {
                 </a>
             </li>
 
+            <li className='py-2 text-1xl text-gray-500'>
+                <a href='https://stanno.us/mitmedialab'>
+                    mit portfolio...
+                </a>
+            </li>
+
                 
             {/* <ul className='flex justify-between w-[260px] p-3 pt-5'>
                 <li className=''>
