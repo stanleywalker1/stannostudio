@@ -4,6 +4,7 @@ import HW2 from './HW2';
 import Iframe from 'react-iframe';
 import agar from '../assets/agar.png'
 import sandbox from '../assets/doodlePreview.png'
+import runner from '../assets/runner.png'
 
 
 const NYU = () => {
@@ -194,6 +195,33 @@ const NYU = () => {
                 Overall, these updates to our project provide a route for a more polished and engaging experience for players with a environment template to build from and improved controls. 
                 </p>
             </div>
+
+
+            <div style={{backgroundImage: `url(${runner})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'> 
+            <div className='opacity-0 text-center group-hover:opacity-100'>
+                <span className='text-2xl  font-bold text-white tracking-wider'>
+                Infinite Runner
+                </span>
+                <div className='pt-8 text-center'>
+                <a href="https://randorunner.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                            Live Demo
+                            </button>
+                        </a>
+                <a href="https://github.com/stanleywalker1/generative-runner" target="_blank" rel="noopener noreferrer">
+                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Github
+                    </button>
+                </a>
+                    
+                </div>
+             </div>
+            </div>
+
+
+
+
+
         </div>
     </div>
   )
