@@ -41,7 +41,7 @@ const Skills = () => {
             {/* <a className="underline underline-offset-4 decoration-indigo-500 hover:decoration-4">Resume</a>  */}
            
                 <div className='flex sm:text-left text-lg font-bold font-mono'>
-                    <p>Incase you want edvidence here's my <a className="border bg-pink-600 border-slate-300 hover:border-pink-600" href="https://drive.google.com/file/d/15U5_ygy44-oGOrjBcoBRwEP6O9PBCI1Y/view?usp=sharing" target="_blank" rel="noopener noreferrer"> resume</a>
+                    <p>Incase you want edvidence here's my <a className="border bg-pink-600 border-slate-300 hover:border-pink-600" href="https://drive.google.com/file/d/1naPI2eGfJTyYJQlLCWhyMyFx_dYU3YyA/view?usp=sharing" target="_blank" rel="noopener noreferrer"> resume</a>
 
                     </p>
 
