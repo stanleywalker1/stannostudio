@@ -16,6 +16,7 @@ import sandbox from '../assets/doodlePreview.png'
 import firefly from '../assets/firefly.png'
 import flashlight from '../assets/flashlight-draw.png'
 import temples from '../assets/temples.png'
+import startupweek from '../assets/flyer.PNG'
 import NYU from './NYU'
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
@@ -36,6 +37,21 @@ const Projects = () => {
 {/* grid container */}
             <div 
                  className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+
+                <div style={{backgroundImage: `url(${startupweek})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    <div className='opacity-0 text-center group-hover:opacity-100'>
+                        <span className='text-2xl  font-bold text-white tracking-wider'>
+                        NYU Startup Week
+                        </span>
+                        <div className='pt-8 text-center'>
+                        <a href="https://nyustartupweek.org/" target="_blank" rel="noopener noreferrer">
+                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                    Website
+                                    </button>
+                                </a>
+                        </div>
+                    </div>
+                </div>
 
                 <div style={{backgroundImage: `url(${temples})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     <div className='opacity-0 text-center group-hover:opacity-100'>
