@@ -4,6 +4,10 @@ import CSS from '../assets/css.png'
 import GITHUB from '../assets/github.png'
 import JAVASCRIPT from '../assets/javascript.png'
 import REACT from '../assets/react.png'
+import HF from '../assets/hf-logo.png'
+import P5 from '../assets/p5js.jpeg'
+import ADB from '../assets/adobe.png'
+import TWEET from '../assets/twitterapi.png'
 
 // import {FaBars, FaTimes, FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaDochub} from 'react-icons/fa'
 // import { HiOutlineMail } from 'react-icons/hi';
@@ -36,6 +40,22 @@ const Skills = () => {
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-20 mx-auto' src={GITHUB} alt="GITHUB"></img>
                     <p className='my-4'>GITHUB</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img className='w-20 mx-auto' src={HF} alt="HF"></img>
+                    <p className='my-4'>HUGGING FACE</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img className='w-20 mx-auto' src={P5} alt="P5"></img>
+                    <p className='my-4'>P5</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img className='w-20 mx-auto' src={ADB} alt="Adobe"></img>
+                    <p className='my-4'>ADOBE APPS</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                    <img className='w-20 mx-auto' src={TWEET} alt="Twitter API"></img>
+                    <p className='my-4'>APIs</p>
                 </div>
             </div>
             {/* <a className="underline underline-offset-4 decoration-indigo-500 hover:decoration-4">Resume</a>  */}

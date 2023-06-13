@@ -7,11 +7,14 @@ import MIT from "./components/MIT"
 import Temples from './components/Temples';
 import {Routes, Route} from 'react-router-dom'; 
 import GalleryNavbar from "./components/GalleryNavbar";
+import "./customCursor.css";
+import "./customCursor"
 
 function App() {
   return (
     <div>
       {/* https://www.youtube.com/watch?v=2kg0z1qNrkw */}
+      <div className="cursor-custom">
       <Navbar/>
       <Routes>
         <Route path='/' element={<Index/>}/>
@@ -26,6 +29,7 @@ function App() {
         <Route path='/jewsofnewyork' element={<Temples/>}/>
       </Routes>
       <Footer/>
+      </div>
     </div>
   );
 }
