@@ -45,7 +45,7 @@ const Projects = () => {
                         infinitecanvas
                         </span>
                         <div className='pt-8 text-center'>
-                        <a href="http://infinitecanvas.live/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.infinitecanvas.live/" target="_blank" rel="noopener noreferrer">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                                     Website
                                     </button>
