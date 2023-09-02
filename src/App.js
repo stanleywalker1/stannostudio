@@ -9,6 +9,7 @@ import {Routes, Route} from 'react-router-dom';
 import GalleryNavbar from "./components/GalleryNavbar";
 import "./customCursor.css";
 import "./customCursor"
+import GenAIContent from "./components/GenAIContent";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
       <Routes>
         <Route path='/' element={<GalleryNavbar/>}/>
         <Route path='/mitmedialab' element={<MIT/>}/>
+      </Routes>
+      <Routes>
+        <Route path='/' element={<GalleryNavbar/>}/>
+        <Route path='/exploration' element={<GenAIContent/>}/>
       </Routes>
       <Routes>
         <Route path='/' element={<GalleryNavbar/>}/>

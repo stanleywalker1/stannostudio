@@ -45,7 +45,9 @@ const About = () => {
                   
                 </div>
                 <div>
-                    <p className='font-mono py-3'>some favorite tools include WebGL, AR, data visualization, and generative AI</p>
+                    <p className='font-mono py-3'>some favorite tools include WebGL, AR, data visualization, and generative AI.</p>
+                    <p className='font-mono py-3'>Current: AI @ Cornell | Former NYU Shanghai, DJI Global, Yambo Studio </p>
+                
                 </div>
 
 

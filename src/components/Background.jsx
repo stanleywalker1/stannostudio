@@ -37,13 +37,48 @@ void main()
 
 const ShaderComponent = createShaderCanvas(shader);
 
+// class Background extends Component {
+//   state = {
+//     timeSync: false
+//   };
+
+//   updateState = e => this.setState(state => ({ timeSync: !state.timeSync }));
+// // className="w-full h-screen absolute"
+//   render() {
+//     return (
+//       <div className='w-full h-screen -z-[1] absolute' onClick={this.updateState}>
+//         <ShaderComponent
+//           id="exponential-step-curve"
+//           timeSync={this.state.timeSync}
+//           style={{width: "100%", height: "100vh"}}
+         
+
+//         />
+//       </div>
+//     );
+//   }
+// }
+// export default Background
+
 class Background extends Component {
   state = {
     timeSync: false
   };
 
+  componentDidMount() {
+    const canvas = document.getElementById("exponential-step-curve");
+    if (canvas) {
+        const dpr = window.devicePixelRatio || 1;
+        canvas.width = canvas.clientWidth * dpr;
+        canvas.height = canvas.clientHeight * dpr;
+    }
+    this.updateState();
+    // Uncomment the line below to try the forced resize, although it's not recommended
+    // window.dispatchEvent(new Event('resize'));
+  }
+
   updateState = e => this.setState(state => ({ timeSync: !state.timeSync }));
-// className="w-full h-screen absolute"
+
   render() {
     return (
       <div className='w-full h-screen -z-[1] absolute' onClick={this.updateState}>
@@ -51,8 +86,6 @@ class Background extends Component {
           id="exponential-step-curve"
           timeSync={this.state.timeSync}
           style={{width: "100%", height: "100vh"}}
-         
-
         />
       </div>
     );
