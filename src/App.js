@@ -1,4 +1,7 @@
 //import About from "./components/About";
+
+import { useLocation } from 'react-router-dom';
+
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Index from "./components/Index";
@@ -12,30 +15,32 @@ import "./customCursor"
 import GenAIContent from "./components/GenAIContent";
 
 function App() {
+
+  const location = useLocation();
   return (
     <div>
-      {/* https://www.youtube.com/watch?v=2kg0z1qNrkw */}
       <div className="cursor-custom">
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Index/>}/>
-        <Route path='/NYU' element={<NYU/>}/>
-      </Routes>
-      <Routes>
-        <Route path='/' element={<GalleryNavbar/>}/>
-        <Route path='/mitmedialab' element={<MIT/>}/>
-      </Routes>
-      <Routes>
-        <Route path='/' element={<GalleryNavbar/>}/>
-        <Route path='/exploration' element={<GenAIContent/>}/>
-      </Routes>
-      <Routes>
-        <Route path='/' element={<GalleryNavbar/>}/>
-        <Route path='/jewsofnewyork' element={<Temples/>}/>
-      </Routes>
-      <Footer/>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Index />} />
+          <Route path='/NYU' element={<NYU />} />
+        </Routes>
+        <Routes>
+          <Route path='/' element={<GalleryNavbar />} />
+          <Route path='/mitmedialab' element={<MIT />} />
+        </Routes>
+        <Routes>
+          <Route path='/' element={<GalleryNavbar />} />
+          <Route path='/exploration' element={<GenAIContent />} />
+        </Routes>
+        <Routes>
+          <Route path='/' element={<GalleryNavbar />} />
+          <Route path='/jewsofnewyork' element={<Temples />} />
+        </Routes>
+        {/* Conditionally render Footer */}
+        {location.pathname !== '/exploration' && <Footer />}
       </div>
-    </div>
+  </div>
   );
 }
 

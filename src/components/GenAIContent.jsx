@@ -1,11 +1,16 @@
 import React from 'react'
+import {Link} from 'react-scroll';
+import {FaArrowUp} from 'react-icons/fa'
+
+import { useScroll, animated } from '@react-spring/web'
+
 
 import brooklyn from '../assets/ai-gallery/brooklyn.gif';
 import brooklyndrunk from '../assets/ai-gallery/brooklyndrunk.gif';
 import canadianexpress from '../assets/ai-gallery/canadianexpress.gif';
-import canadianexpress2 from '../assets/ai-gallery/canadianexpress2.gif';
-import lkndrone from '../assets/ai-gallery/lkndrone.gif';
-import lknsunset from '../assets/ai-gallery/lknsunset.gif';
+// import canadianexpress2 from '../assets/ai-gallery/canadianexpress2.gif';
+// import lkndrone from '../assets/ai-gallery/lkndrone.gif';
+// import lknsunset from '../assets/ai-gallery/lknsunset.gif';
 import mountainpan from '../assets/ai-gallery/mountainpan.gif';
 import mountaintrain from '../assets/ai-gallery/mountaintrain.gif';
 import moutainbubbles from '../assets/ai-gallery/moutainbubbles.gif';
@@ -26,16 +31,46 @@ import polarIceburgMesh from '../assets/ai-gallery/polar-iceburg-mesh.gif'
 import polarIceburgStill from '../assets/ai-gallery/polar-iceburg-still.gif'
 import iceFire from '../assets/ai-gallery/ice-fire.gif'
 import atomicbomb from '../assets/ai-gallery/atomicbomb.gif'
+import duneCloud from '../assets/ai-gallery/dune-cloud.gif'
+import duneBranch from '../assets/ai-gallery/dune-branch.gif'
+import duneDrone2 from '../assets/ai-gallery/dune-drone2.gif'
+import duneSky from '../assets/ai-gallery/dune-sky.gif'
+import propPlane from '../assets/ai-gallery/propplane-nyc.gif'
+// import duneDrone1 from '../assets/ai-gallery/dune-drone.gif'
+// import duneWave from '../assets/ai-gallery/dune-wave.gif'
+// import miamiIsland from '../assets/ai-gallery/miami-island.gif'
+// import duneDrone3 from '../assets/ai-gallery/dune-drone3.gif'
 
-
-
+// import CustomScrollbar from './customScrollbar';
 
 const GenAIContent = () => {
 
+    const { scrollYProgress } = useScroll()
+
+   
+
   return (
-    <div name='mit' className='w-full h-full bg-[#0a192f] text-gray-300'>
-            
-        <div className='flex flex-col justify-center items-center w-full h-full'>
+
+   
+    <div name='runway' className=' w-full h-full bg-[#0a192f] text-gray-300'>
+
+
+<animated.div
+      style={{
+        // height: '100vh', // Full viewport height
+        // width: '100%', // Full width
+        background: scrollYProgress.to(
+            [0, 1], 
+            [
+                'linear-gradient(45deg, rgb(10,25,47), rgb(10,25,47), rgb(10,25,47))', 
+                'linear-gradient(45deg, rgb(0, 0, 0), rgb(180, 180, 180), rgb(128, 128, 128))'
+              ]
+        )
+      }}
+    >
+        {/* <CustomScrollbar targetSelector=".scroll-wrapper" /> */}
+       
+        <div className='flex flex-col justify-center items-center w-full h-full' style={{overflowY: 'auto', maxHeight: '10000px'}}>
         <div className='pt-20 pb-1 sm:text-center text-1xl'>
                 <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>~~~~~~</p>
                 <p className='pt-6'>all you touch and all you see, is all your life will ever be</p>
@@ -180,6 +215,37 @@ const GenAIContent = () => {
                      </div>
                 </div>
 
+                <div className="flex flex-wrap -m-1 md:-m-2 p-5">
+                    <div className="flex flex-wrap w-full">
+                        <div className="w-full p-1 md:p-2">
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg "
+                            src={duneCloud}/>
+                            </div>
+                    </div>
+                 </div>
+
+
+                 <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
+                    <div className="flex flex-wrap w-2/5">
+                    <div className="w-full p-1 md:p-2">
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                            src={duneSky}/>
+                        </div>  
+                        <div className="w-full p-1 md:p-2">
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                            src={duneDrone2}/>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-wrap w-3/5">
+                        <div className="w-full p-1 md:p-2">
+                        <img alt="gallery" className="gallery block object-cover object-right w-full h-full rounded-lg"
+                            src={duneBranch}/>
+                        </div>
+                       
+                     </div>
+                </div>
+
 
 
                  <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
@@ -206,6 +272,15 @@ const GenAIContent = () => {
                             src={brooklyn}/>
                         </div>
                      </div>
+                </div>
+
+                <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
+                    <div className="flex flex-wrap w-full">
+                        <div className="w-full p-1 md:p-2">
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                                src={propPlane}/>
+                        </div>  
+                    </div>
                 </div>
 
 
@@ -255,14 +330,6 @@ const GenAIContent = () => {
                 </div>
 
 
-              
-
-
-                
-                  
-
-
-
 
             </div>
             </section>
@@ -270,20 +337,44 @@ const GenAIContent = () => {
        
             
             <div className='mt-[80px] pb-5 pl-7 pr-7 sm:text-right text-1xl font-bold font-mono'>
-              <p>Generated with RunwayML - Collection of my Artificial Life</p>
+              <p>Made with RunwayML - Collection of my Artificial Life</p>
             </div>
 
             <div className="max-w-[1000px] w-full flex justify-around pb-20">
                 <div>
                 <p className='paragraph sm:text-left text-1xl pr-4 font-mono text-gray-400'>
-                more of these things on my twitter
+                more on my twitter
                 </p>
                 </div>
                 </div>     
              
         </div>
-        
+
+        <div className='w-full h-[80px] flex justify-center items-center text-gray-300'>
+
+        {/* menu */}
+        <ul >
+            <li>
+                <Link
+                    to="/"
+                    onClick={() => { window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth",
+                        }); }}
+                    className='flex row items-center text-pink-600'> Back to the top<FaArrowUp className='ml-3'/>
+                </Link>
+                
+                
+            </li>
+        </ul>
+
     </div>
+
+   
+        </animated.div>
+    </div>
+    
     
   )
 }

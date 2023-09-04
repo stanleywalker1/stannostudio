@@ -1,0 +1,15 @@
+.custom-scrollbar {
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  width: 50px;
+  background: #ff0000;
+  z-index: 1000;
+  transition: height 0.1s;
+}
+
+.scroll-wrapper {
+  max-height: 10000px;
+  overflow-y: auto;
+}
+
