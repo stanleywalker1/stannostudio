@@ -1,4 +1,4 @@
-import React, { useRef , useEffect} from 'react'
+import React, { useRef , useEffect, useState} from 'react'
 import {Link} from 'react-scroll';
 import {FaArrowUp} from 'react-icons/fa'
 
@@ -51,6 +51,29 @@ import propPlane from '../assets/ai-gallery/propplane-nyc.gif'
 
 // import CustomScrollbar from './customScrollbar';
 
+
+function useOnScreen(options) {
+    const ref = useRef(null);
+    const [isIntersecting, setIntersecting] = useState(false);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIntersecting(entry.isIntersecting);
+        },
+        options
+      );
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+      return () => {
+        observer.unobserve(ref.current);
+      };
+    }, [ref, options]);
+  
+    return [ref, isIntersecting];
+  }
+
 const GenAIContent = () => {
 
     const { scrollYProgress } = useScroll()
@@ -90,23 +113,27 @@ const GenAIContent = () => {
                 <div className="flex flex-wrap -m-1 md:-m-2 md:p-5" style={{ scrollSnapAlign: 'center' }}>
                     <div className="flex flex-wrap md:w-2/3 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
-                            src={mountainpan}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
+                            src={mountainpan}/> */}
+                            <LazyImage src={mountainpan} alt="Mountain Panorama" />
                             </div>
                     </div>
 
                     <div className="flex flex-wrap md:w-1/3 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                            src={canadianexpress}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                            src={canadianexpress}/> */}
+                            <LazyImage src={canadianexpress} alt="Mountain Panorama" />
                         </div>
                         <div className="md:w-1/2 w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                            src={mountaintrain}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                            src={mountaintrain}/> */}
+                             <LazyImage src={mountaintrain} alt="Mountain Panorama" />
                         </div>
                         <div className="md:w-1/2 w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                            src={moutainbubbles}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                            src={moutainbubbles}/> */}
+                             <LazyImage src={moutainbubbles} alt="Mountain Panorama" />
                         </div>
                     </div>
                  </div>
@@ -116,21 +143,25 @@ const GenAIContent = () => {
                 <div className="flex flex-wrap -m-1 md:-m-2 md:pt-0 md:p-5 pt-2"  style={{ scrollSnapAlign: 'center' }}>
                     <div className="flex flex-wrap w-full">
                         <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                                src={polarMan}/>
+                            {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={polarMan}/> */}
+                                  <LazyImage src={polarMan} alt="Mountain Panorama" />
                         </div>  
                     </div>
                     <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                                src={polarIceburgMesh}/>
+                            {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={polarIceburgMesh}/> */}
+                                  <LazyImage src={polarIceburgMesh} alt="Mountain Panorama" />
                         </div>  
                     </div>
 
                     <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                            src={polarIceburgStill}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                            src={polarIceburgStill}/> */}
+
+                        <LazyImage src={polarIceburgStill} alt="Mountain Panorama" />
                         </div>
                      </div>
                 </div>
@@ -139,23 +170,27 @@ const GenAIContent = () => {
                 <div className="flex flex-wrap -m-1 md:-m-2 md:pb-0 md:pt-0 md:p-5 pt-2" style={{ scrollSnapAlign: 'center' }} >
                     <div className="flex md:w-full flex-wrap">
                         <div className="md:w-2/3 w-full p-1 md:p-2">
-                            <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                                src={icelandLights}/>
+                            {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={icelandLights}/> */}
+                                 <LazyImage src={icelandLights} alt="Mountain Panorama" />
                         </div>  
                         <div className="md:w-1/3 w-full p-1 md:p-2">
-                            <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                                src={icelandHouse}/>
+                            {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={icelandHouse}/> */}
+                                 <LazyImage src={icelandHouse} alt="Mountain Panorama" />
                         </div>  
                     </div>
                     
                     <div className="flex md:w-full flex-wrap">
                         <div className="md:w-1/3 w-full p-1 md:p-2">
-                            <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                                src={icelandSelfie}/>
+                            {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={icelandSelfie}/> */}
+                                 <LazyImage src={icelandSelfie} alt="Mountain Panorama" />
                         </div>  
                         <div className="md:w-2/3 w-full p-1 md:p-2">
-                            <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                                src={icelandDrive}/>
+                            {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={icelandDrive}/> */}
+                                 <LazyImage src={icelandDrive} alt="Mountain Panorama" />
                         </div>  
                     </div>
                 </div>
@@ -163,8 +198,9 @@ const GenAIContent = () => {
                  <div className="flex flex-wrap -m-1 md:-m-2 md:p-5" style={{ scrollSnapAlign: 'center' }}>
                     <div className="flex flex-wrap w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
-                            src={organicBomb}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
+                            src={organicBomb}/> */}
+                             <LazyImage src={organicBomb} alt="Mountain Panorama" />
                             </div>
                     </div>
                  </div>
@@ -175,19 +211,22 @@ const GenAIContent = () => {
                  <div className="flex flex-wrap -m-1 md:-m-2 md:pt-0 md:p-5" style={{ scrollSnapAlign: 'center' }}>
                     <div className="flex flex-wrap md:w-3/5 w-full">
                     <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                            src={computerStill}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                            src={computerStill}/> */}
+                             <LazyImage src={computerStill} alt="Mountain Panorama" />
                         </div>  
                     </div>
 
                     <div className="flex flex-wrap md:w-2/5 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                            src={computerHeads}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                            src={computerHeads}/> */}
+                             <LazyImage src={computerHeads} alt="Mountain Panorama" />
                         </div>
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg"
-                            src={computerMonkey}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg"
+                            src={computerMonkey}/> */}
+                             <LazyImage src={computerMonkey} alt="Mountain Panorama" />
                         </div> 
                      </div>
                 </div>
@@ -197,15 +236,17 @@ const GenAIContent = () => {
                 <div className="flex flex-wrap -m-1 md:-m-2 md:pt-0 md:p-5" style={{ scrollSnapAlign: 'center' }}>
                     <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full md:p-2 pt-2">
-                            <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                                src={atomicbomb}/>
+                            {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={atomicbomb}/> */}
+                                 <LazyImage src={atomicbomb} alt="Mountain Panorama" />
                         </div>  
                     </div>
 
                     <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full md:p-2 pb-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                            src={iceFire}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                            src={iceFire}/> */}
+                             <LazyImage src={iceFire} alt="Mountain Panorama" />
                         </div>
                      </div>
                 </div>
@@ -213,8 +254,9 @@ const GenAIContent = () => {
                 <div className="flex flex-wrap -m-1 md:-m-2 md:p-5 md:pb-1 md:pt-0">
                     <div className="flex flex-wrap w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
-                            src={duneCloud}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
+                            src={duneCloud}/> */}
+                             <LazyImage src={duneCloud} alt="Mountain Panorama" />
                             </div>
                     </div>
                  </div>
@@ -223,19 +265,22 @@ const GenAIContent = () => {
                  <div className="flex flex-wrap -m-1 md:-m-2 md:pt-0 md:p-5">
                     <div className="flex flex-wrap md:w-2/5 w-full">
                     <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                            src={duneSky}/>
+                        {/* <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                            src={duneSky}/> */}
+                             <LazyImage src={duneSky} alt="Mountain Panorama" />
                         </div>  
                         <div className="w-full pb-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                            src={duneDrone2}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                            src={duneDrone2}/> */}
+                             <LazyImage src={duneDrone2} alt="Mountain Panorama" />
                         </div>
                     </div>
 
                     <div className="flex flex-wrap md:w-3/5 w-full">
                         <div className="w-full pb-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-right w-full h-full md:rounded-lg"
-                            src={duneBranch}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-right w-full h-full md:rounded-lg"
+                            src={duneBranch}/> */}
+                             <LazyImage src={duneBranch} alt="Mountain Panorama" />
                         </div>
                        
                      </div>
@@ -246,8 +291,9 @@ const GenAIContent = () => {
                  <div className="flex flex-wrap -m-1 md:-m-2 pt-0 pb-1 md:p-5">
                     <div className="flex flex-wrap w-full">
                         <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                                src={tram}/>
+                            {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={tram}/> */}
+                                 <LazyImage src={tram} alt="Mountain Panorama" />
                         </div>  
                     </div>
                 </div>
@@ -256,15 +302,17 @@ const GenAIContent = () => {
                  <div className="flex flex-wrap -m-1 md:-m-2 pt-0 md:p-5">
                     <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                                src={brooklyndrunk}/>
+                            {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={brooklyndrunk}/> */}
+                                 <LazyImage src={brooklyndrunk} alt="Mountain Panorama" />
                         </div>  
                     </div>
 
                     <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                            src={brooklyn}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                            src={brooklyn}/> */}
+                             <LazyImage src={brooklyn} alt="Mountain Panorama" />
                         </div>
                      </div>
                 </div>
@@ -272,8 +320,9 @@ const GenAIContent = () => {
                 <div className="flex flex-wrap -m-1 md:-m-2 pt-0 md:p-5 ">
                     <div className="flex flex-wrap w-full">
                         <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-                                src={propPlane}/>
+                            {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={propPlane}/> */}
+                                  <LazyImage src={propPlane} alt="Mountain Panorama" />
                         </div>  
                     </div>
                 </div>              
@@ -281,21 +330,24 @@ const GenAIContent = () => {
                 <div className="flex flex-wrap -m-1 md:-m-2 pt-0 md:p-5">
                     <div className="flex flex-wrap md:w-1/3 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg"
-                            src={shanghaimetro}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg"
+                            src={shanghaimetro}/> */}
+                              <LazyImage src={shanghaimetro} alt="Mountain Panorama" />
                         </div>
                     </div>
 
                     <div className="flex flex-wrap md:w-1/3 w-full">
                         <div className="w-full p-1 md:p-2 ">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg pb-1 flex items-start"
-                            src={shanghai}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg pb-1 flex items-start"
+                            src={shanghai}/> */}
+                              <LazyImage src={shanghai} alt="Mountain Panorama" />
                         </div>
                     </div>
                     <div className="flex flex-wrap md:w-1/3 w-full">
                         <div className="w-full p-1 md:p-2 ">
-                        <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg pt-1"
-                            src={shanghaibing}/>
+                        {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg pt-1"
+                            src={shanghaibing}/> */}
+                              <LazyImage src={shanghaibing} alt="Mountain Panorama" />
                         </div>
                     </div>
                 </div>
@@ -346,6 +398,34 @@ const GenAIContent = () => {
     
   )
 }
+
+
+const LazyImage = ({ src, alt }) => {
+    const [ref, isOnScreen] = useOnScreen({
+      rootMargin: "0px 0px -100px 0px", // Adjust as needed
+    });
+  
+    return (
+      <div ref={ref} style={{width: "100%", height: "100%"}}>
+        {isOnScreen ? (
+          <img
+            alt={alt}
+            loading="lazy"
+            className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+            src={src}
+          />
+        ) : (
+          <div
+            className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+            style={{ backgroundColor: "#CCC", minHeight: "200px" }}
+          >
+            Loading...
+          </div>
+        )}
+      </div>
+    );
+  };
+  
 
 export default GenAIContent
 
