@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useRef , useEffect} from 'react'
 import {Link} from 'react-scroll';
 import {FaArrowUp} from 'react-icons/fa'
 
 import { useScroll, animated } from '@react-spring/web'
+
+import {
+    motion,
+    useSpring,
+    useTransform,
+    MotionValue, 
+    useAnimation
+  } from "framer-motion";
 
 
 import brooklyn from '../assets/ai-gallery/brooklyn.gif';
@@ -47,7 +55,6 @@ const GenAIContent = () => {
 
     const { scrollYProgress } = useScroll()
 
-   
 
   return (
 
@@ -68,7 +75,8 @@ const GenAIContent = () => {
         )
       }}
     >
-        {/* <CustomScrollbar targetSelector=".scroll-wrapper" /> */}
+    
+
        
         <div className='flex flex-col justify-center items-center w-full h-full' style={{overflowY: 'auto', maxHeight: '10000px'}}>
         <div className='pt-20 pb-1 sm:text-center text-1xl'>
@@ -78,26 +86,26 @@ const GenAIContent = () => {
       
 
             <section className="overflow-hidden text-gray-700">
-            <div className="container px-9 py-2 mx-auto lg:pt-18 md:pt-15 sm:pt-10">
-                <div className="flex flex-wrap -m-1 md:-m-2 p-5">
-                    <div className="flex flex-wrap w-2/3">
+            <div className="container px-0 py-2 mx-auto lg:pt-18 md:pt-15 sm:pt-10" style ={{scrollSnapType: 'y mandatory', overscrollBehaviorY: "contain"}}>
+                <div className="flex flex-wrap -m-1 md:-m-2 md:p-5" style={{ scrollSnapAlign: 'center' }}>
+                    <div className="flex flex-wrap md:w-2/3 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg "
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
                             src={mountainpan}/>
                             </div>
                     </div>
 
-                    <div className="flex flex-wrap w-1/3">
+                    <div className="flex flex-wrap md:w-1/3 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={canadianexpress}/>
                         </div>
-                        <div className="w-1/2 p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                        <div className="md:w-1/2 w-full p-1 md:p-2">
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={mountaintrain}/>
                         </div>
-                        <div className="w-1/2 p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                        <div className="md:w-1/2 w-full p-1 md:p-2">
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={moutainbubbles}/>
                         </div>
                     </div>
@@ -105,70 +113,57 @@ const GenAIContent = () => {
 
                
 
-                <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
+                <div className="flex flex-wrap -m-1 md:-m-2 md:pt-0 md:p-5 pt-2"  style={{ scrollSnapAlign: 'center' }}>
                     <div className="flex flex-wrap w-full">
                         <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={polarMan}/>
                         </div>  
                     </div>
-                </div>
-                <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
-                    <div className="flex flex-wrap w-1/2">
+                    <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={polarIceburgMesh}/>
                         </div>  
                     </div>
 
-                    <div className="flex flex-wrap w-1/2">
+                    <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={polarIceburgStill}/>
                         </div>
                      </div>
                 </div>
 
-                <div className="flex flex-wrap -m-1 md:-m-2 p-5 h-[450px]">
-                    <div className="flex flex-wrap w-2/3">
-                        <div className="w-full p-1 md:p-2 h-[80%]">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-[80%] rounded-lg "
-                            src={icelandLights}/>
-                            </div>
+
+                <div className="flex flex-wrap -m-1 md:-m-2 md:pb-0 md:pt-0 md:p-5 pt-2" style={{ scrollSnapAlign: 'center' }} >
+                    <div className="flex md:w-full flex-wrap">
+                        <div className="md:w-2/3 w-full p-1 md:p-2">
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={icelandLights}/>
+                        </div>  
+                        <div className="md:w-1/3 w-full p-1 md:p-2">
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={icelandHouse}/>
+                        </div>  
                     </div>
-
-                    <div className="flex flex-wrap w-1/3">
-                        <div className="w-full p-1 md:p-2 h-[80%]">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-[80%] rounded-lg"
-                            src={icelandHouse}/>
-                        </div>
+                    
+                    <div className="flex md:w-full flex-wrap">
+                        <div className="md:w-1/3 w-full p-1 md:p-2">
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={icelandSelfie}/>
+                        </div>  
+                        <div className="md:w-2/3 w-full p-1 md:p-2">
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
+                                src={icelandDrive}/>
+                        </div>  
                     </div>
-                 </div>
+                </div>
 
-
-
-
-
-                 <div className="flex flex-wrap -m-1 md:-m-2 p-5 h-[530px]">
-                    <div className="flex flex-wrap w-1/3">
-                        <div className="w-full p-1 md:p-2 h-[80%]">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-[80%] rounded-lg "
-                            src={icelandSelfie}/>
-                            </div>
-                    </div>
-
-                    <div className="flex flex-wrap w-2/3 ">
-                        <div className="w-full p-1 md:p-2 h-[80%]">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-[80%] rounded-lg"
-                            src={icelandDrive}/>
-                        </div>
-                    </div>
-                 </div>
-
-                 <div className="flex flex-wrap -m-1 md:-m-2 p-5">
+                 <div className="flex flex-wrap -m-1 md:-m-2 md:p-5" style={{ scrollSnapAlign: 'center' }}>
                     <div className="flex flex-wrap w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg "
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
                             src={organicBomb}/>
                             </div>
                     </div>
@@ -177,21 +172,21 @@ const GenAIContent = () => {
 
 
 
-                 <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
-                    <div className="flex flex-wrap w-3/5">
+                 <div className="flex flex-wrap -m-1 md:-m-2 md:pt-0 md:p-5" style={{ scrollSnapAlign: 'center' }}>
+                    <div className="flex flex-wrap md:w-3/5 w-full">
                     <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={computerStill}/>
                         </div>  
                     </div>
 
-                    <div className="flex flex-wrap w-2/5">
+                    <div className="flex flex-wrap md:w-2/5 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={computerHeads}/>
                         </div>
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full rounded-lg"
+                        <img alt="gallery" className="gallery block object-cover object-center w-full md:rounded-lg"
                             src={computerMonkey}/>
                         </div> 
                      </div>
@@ -199,47 +194,47 @@ const GenAIContent = () => {
 
 
 
-                <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
-                    <div className="flex flex-wrap w-1/2">
-                        <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                <div className="flex flex-wrap -m-1 md:-m-2 md:pt-0 md:p-5" style={{ scrollSnapAlign: 'center' }}>
+                    <div className="flex flex-wrap md:w-1/2 w-full">
+                        <div className="w-full md:p-2 pt-2">
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={atomicbomb}/>
                         </div>  
                     </div>
 
-                    <div className="flex flex-wrap w-1/2">
-                        <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                    <div className="flex flex-wrap md:w-1/2 w-full">
+                        <div className="w-full md:p-2 pb-2">
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={iceFire}/>
                         </div>
                      </div>
                 </div>
 
-                <div className="flex flex-wrap -m-1 md:-m-2 p-5">
+                <div className="flex flex-wrap -m-1 md:-m-2 md:p-5 md:pb-1 md:pt-0">
                     <div className="flex flex-wrap w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg "
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
                             src={duneCloud}/>
                             </div>
                     </div>
                  </div>
 
 
-                 <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
-                    <div className="flex flex-wrap w-2/5">
+                 <div className="flex flex-wrap -m-1 md:-m-2 md:pt-0 md:p-5">
+                    <div className="flex flex-wrap md:w-2/5 w-full">
                     <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={duneSky}/>
                         </div>  
-                        <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                        <div className="w-full pb-1 md:p-2">
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={duneDrone2}/>
                         </div>
                     </div>
 
-                    <div className="flex flex-wrap w-3/5">
-                        <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-right w-full h-full rounded-lg"
+                    <div className="flex flex-wrap md:w-3/5 w-full">
+                        <div className="w-full pb-1 md:p-2">
+                        <img alt="gallery" className="gallery block object-cover object-right w-full h-full md:rounded-lg"
                             src={duneBranch}/>
                         </div>
                        
@@ -248,82 +243,58 @@ const GenAIContent = () => {
 
 
 
-                 <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
+                 <div className="flex flex-wrap -m-1 md:-m-2 pt-0 pb-1 md:p-5">
                     <div className="flex flex-wrap w-full">
                         <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={tram}/>
                         </div>  
                     </div>
                 </div>
 
 
-                 <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
-                    <div className="flex flex-wrap w-1/2">
+                 <div className="flex flex-wrap -m-1 md:-m-2 pt-0 md:p-5">
+                    <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={brooklyndrunk}/>
                         </div>  
                     </div>
 
-                    <div className="flex flex-wrap w-1/2">
+                    <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={brooklyn}/>
                         </div>
                      </div>
                 </div>
 
-                <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
+                <div className="flex flex-wrap -m-1 md:-m-2 pt-0 md:p-5 ">
                     <div className="flex flex-wrap w-full">
                         <div className="w-full p-1 md:p-2">
-                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
+                            <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={propPlane}/>
                         </div>  
                     </div>
-                </div>
+                </div>              
 
-
-                    {/* BROOKLYN 3X COLLAGE */}
-                {/* <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
-                    <div className="flex flex-wrap w-2/5">
-                    <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
-                            src={brooklyndrunk}/>
-                        </div>
+                <div className="flex flex-wrap -m-1 md:-m-2 pt-0 md:p-5">
+                    <div className="flex flex-wrap md:w-1/3 w-full">
                         <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full rounded-lg"
-                            src={brooklyn}/>
-                        </div>   
-                    </div>
-
-                    <div className="flex flex-wrap w-3/5">
-                        <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full h-full rounded-lg"
-                            src={tram}/>
-                        </div>
-                    </div>
-                </div> */}
-
-              
-
-                <div className="flex flex-wrap -m-1 md:-m-2 pt-0 p-5">
-                    <div className="flex flex-wrap w-1/3">
-                        <div className="w-full p-1 md:p-2">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full rounded-lg"
+                        <img alt="gallery" className="gallery block object-cover object-center w-full md:rounded-lg"
                             src={shanghaimetro}/>
                         </div>
                     </div>
 
-                    <div className="flex flex-wrap w-1/3">
+                    <div className="flex flex-wrap md:w-1/3 w-full">
                         <div className="w-full p-1 md:p-2 ">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full rounded-lg pb-1 flex items-start"
+                        <img alt="gallery" className="gallery block object-cover object-center w-full md:rounded-lg pb-1 flex items-start"
                             src={shanghai}/>
                         </div>
                     </div>
-                    <div className="flex flex-wrap w-1/3">
+                    <div className="flex flex-wrap md:w-1/3 w-full">
                         <div className="w-full p-1 md:p-2 ">
-                        <img alt="gallery" className="gallery block object-cover object-center w-full rounded-lg pt-1"
+                        <img alt="gallery" className="gallery block object-cover object-center w-full md:rounded-lg pt-1"
                             src={shanghaibing}/>
                         </div>
                     </div>
@@ -337,13 +308,13 @@ const GenAIContent = () => {
        
             
             <div className='mt-[80px] pb-5 pl-7 pr-7 sm:text-right text-1xl font-bold font-mono'>
-              <p>Made with RunwayML - Collection of my Artificial Life</p>
+              <p>made with runwayML</p>
             </div>
 
             <div className="max-w-[1000px] w-full flex justify-around pb-20">
                 <div>
                 <p className='paragraph sm:text-left text-1xl pr-4 font-mono text-gray-400'>
-                more on my twitter
+                more on twitter @stannostudio
                 </p>
                 </div>
                 </div>     
@@ -368,10 +339,7 @@ const GenAIContent = () => {
                 
             </li>
         </ul>
-
     </div>
-
-   
         </animated.div>
     </div>
     
@@ -380,3 +348,8 @@ const GenAIContent = () => {
 }
 
 export default GenAIContent
+
+
+
+
+
