@@ -44,6 +44,7 @@ import duneBranch from '../assets/ai-gallery/dune-branch.gif'
 import duneDrone2 from '../assets/ai-gallery/dune-drone2.gif'
 import duneSky from '../assets/ai-gallery/dune-sky.gif'
 import propPlane from '../assets/ai-gallery/propplane-nyc.gif'
+import lowqual from '../assets/ai-gallery/lowqual.jpg'
 // import duneDrone1 from '../assets/ai-gallery/dune-drone.gif'
 // import duneWave from '../assets/ai-gallery/dune-wave.gif'
 // import miamiIsland from '../assets/ai-gallery/miami-island.gif'
@@ -115,7 +116,7 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
                             src={mountainpan}/> */}
-                            <LazyImage src={mountainpan} alt="Mountain Panorama" />
+                            <LazyImage src={mountainpan} blurredSrc={lowqual} alt="Mountain Panorama" />
                             </div>
                     </div>
 
@@ -123,17 +124,17 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={canadianexpress}/> */}
-                            <LazyImage src={canadianexpress} alt="Mountain Panorama" />
+                            <LazyImage src={canadianexpress} blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                         <div className="md:w-1/2 w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={mountaintrain}/> */}
-                             <LazyImage src={mountaintrain} alt="Mountain Panorama" />
+                             <LazyImage src={mountaintrain} blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                         <div className="md:w-1/2 w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={moutainbubbles}/> */}
-                             <LazyImage src={moutainbubbles} alt="Mountain Panorama" />
+                             <LazyImage src={moutainbubbles} blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                     </div>
                  </div>
@@ -145,14 +146,14 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                             {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={polarMan}/> */}
-                                  <LazyImage src={polarMan} alt="Mountain Panorama" />
+                                  <LazyImage src={polarMan}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                     </div>
                     <div className="flex flex-wrap md:w-1/2 w-full">
                         <div className="w-full p-1 md:p-2">
                             {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={polarIceburgMesh}/> */}
-                                  <LazyImage src={polarIceburgMesh} alt="Mountain Panorama" />
+                                  <LazyImage src={polarIceburgMesh}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                     </div>
 
@@ -161,7 +162,7 @@ const GenAIContent = () => {
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={polarIceburgStill}/> */}
 
-                        <LazyImage src={polarIceburgStill} alt="Mountain Panorama" />
+                        <LazyImage src={polarIceburgStill}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                      </div>
                 </div>
@@ -172,12 +173,12 @@ const GenAIContent = () => {
                         <div className="md:w-2/3 w-full p-1 md:p-2">
                             {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={icelandLights}/> */}
-                                 <LazyImage src={icelandLights} alt="Mountain Panorama" />
+                                 <LazyImage src={icelandLights}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                         <div className="md:w-1/3 w-full p-1 md:p-2">
                             {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={icelandHouse}/> */}
-                                 <LazyImage src={icelandHouse} alt="Mountain Panorama" />
+                                 <LazyImage src={icelandHouse}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                     </div>
                     
@@ -185,12 +186,12 @@ const GenAIContent = () => {
                         <div className="md:w-1/3 w-full p-1 md:p-2">
                             {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={icelandSelfie}/> */}
-                                 <LazyImage src={icelandSelfie} alt="Mountain Panorama" />
+                                 <LazyImage src={icelandSelfie}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                         <div className="md:w-2/3 w-full p-1 md:p-2">
                             {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={icelandDrive}/> */}
-                                 <LazyImage src={icelandDrive} alt="Mountain Panorama" />
+                                 <LazyImage src={icelandDrive}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                     </div>
                 </div>
@@ -200,7 +201,7 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
                             src={organicBomb}/> */}
-                             <LazyImage src={organicBomb} alt="Mountain Panorama" />
+                             <LazyImage src={organicBomb}  blurredSrc={lowqual} alt="Mountain Panorama" />
                             </div>
                     </div>
                  </div>
@@ -213,7 +214,7 @@ const GenAIContent = () => {
                     <div className="w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={computerStill}/> */}
-                             <LazyImage src={computerStill} alt="Mountain Panorama" />
+                             <LazyImage src={computerStill}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                     </div>
 
@@ -221,12 +222,12 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={computerHeads}/> */}
-                             <LazyImage src={computerHeads} alt="Mountain Panorama" />
+                             <LazyImage src={computerHeads}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                         <div className="w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg"
                             src={computerMonkey}/> */}
-                             <LazyImage src={computerMonkey} alt="Mountain Panorama" />
+                             <LazyImage src={computerMonkey}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div> 
                      </div>
                 </div>
@@ -238,7 +239,7 @@ const GenAIContent = () => {
                         <div className="w-full md:p-2 pt-2">
                             {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={atomicbomb}/> */}
-                                 <LazyImage src={atomicbomb} alt="Mountain Panorama" />
+                                 <LazyImage src={atomicbomb}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                     </div>
 
@@ -246,7 +247,7 @@ const GenAIContent = () => {
                         <div className="w-full md:p-2 pb-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={iceFire}/> */}
-                             <LazyImage src={iceFire} alt="Mountain Panorama" />
+                             <LazyImage src={iceFire}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                      </div>
                 </div>
@@ -256,7 +257,7 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg "
                             src={duneCloud}/> */}
-                             <LazyImage src={duneCloud} alt="Mountain Panorama" />
+                             <LazyImage src={duneCloud}  blurredSrc={lowqual} alt="Mountain Panorama" />
                             </div>
                     </div>
                  </div>
@@ -267,12 +268,12 @@ const GenAIContent = () => {
                     <div className="w-full p-1 md:p-2">
                         {/* <img alt="gallery" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={duneSky}/> */}
-                             <LazyImage src={duneSky} alt="Mountain Panorama" />
+                             <LazyImage src={duneSky}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                         <div className="w-full pb-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={duneDrone2}/> */}
-                             <LazyImage src={duneDrone2} alt="Mountain Panorama" />
+                             <LazyImage src={duneDrone2}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                     </div>
 
@@ -280,7 +281,7 @@ const GenAIContent = () => {
                         <div className="w-full pb-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-right w-full h-full md:rounded-lg"
                             src={duneBranch}/> */}
-                             <LazyImage src={duneBranch} alt="Mountain Panorama" />
+                             <LazyImage src={duneBranch}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                        
                      </div>
@@ -293,7 +294,7 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                             {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={tram}/> */}
-                                 <LazyImage src={tram} alt="Mountain Panorama" />
+                                 <LazyImage src={tram}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                     </div>
                 </div>
@@ -304,7 +305,7 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                             {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={brooklyndrunk}/> */}
-                                 <LazyImage src={brooklyndrunk} alt="Mountain Panorama" />
+                                 <LazyImage src={brooklyndrunk}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                     </div>
 
@@ -312,7 +313,7 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                             src={brooklyn}/> */}
-                             <LazyImage src={brooklyn} alt="Mountain Panorama" />
+                             <LazyImage src={brooklyn}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                      </div>
                 </div>
@@ -322,7 +323,7 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                             {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full h-full md:rounded-lg"
                                 src={propPlane}/> */}
-                                  <LazyImage src={propPlane} alt="Mountain Panorama" />
+                                  <LazyImage src={propPlane}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>  
                     </div>
                 </div>              
@@ -332,7 +333,7 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg"
                             src={shanghaimetro}/> */}
-                              <LazyImage src={shanghaimetro} alt="Mountain Panorama" />
+                              <LazyImage src={shanghaimetro}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                     </div>
 
@@ -340,14 +341,14 @@ const GenAIContent = () => {
                         <div className="w-full p-1 md:p-2 ">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg pb-1 flex items-start"
                             src={shanghai}/> */}
-                              <LazyImage src={shanghai} alt="Mountain Panorama" />
+                              <LazyImage src={shanghai}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                     </div>
                     <div className="flex flex-wrap md:w-1/3 w-full">
                         <div className="w-full p-1 md:p-2 ">
                         {/* <img alt="gallery" loading="lazy" className="gallery block object-cover object-center w-full md:rounded-lg pt-1"
                             src={shanghaibing}/> */}
-                              <LazyImage src={shanghaibing} alt="Mountain Panorama" />
+                              <LazyImage src={shanghaibing}  blurredSrc={lowqual} alt="Mountain Panorama" />
                         </div>
                     </div>
                 </div>
@@ -400,28 +401,32 @@ const GenAIContent = () => {
 }
 
 
-const LazyImage = ({ src, alt }) => {
+const LazyImage = ({ src, blurredSrc, alt }) => {
     const [ref, isOnScreen] = useOnScreen({
-      rootMargin: "0px 0px -100px 0px", // Adjust as needed
+      rootMargin: "0px 0px -100px 0px",
     });
+    
+    const [isLoaded, setIsLoaded] = useState(false);
+  
+    const handleImageLoad = () => {
+      setIsLoaded(true);
+    };
+  
+    useEffect(() => {
+      if (isOnScreen) {
+        const img = new Image();
+        img.src = src;
+        img.onload = handleImageLoad;
+      }
+    }, [isOnScreen, src]);
   
     return (
-      <div ref={ref} style={{width: "100%", height: "100%"}}>
-        {isOnScreen ? (
-          <img
-            alt={alt}
-            loading="lazy"
-            className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-            src={src}
-          />
-        ) : (
-          <div
-            className="gallery block object-cover object-center w-full h-full md:rounded-lg"
-            style={{ backgroundColor: "#CCC", minHeight: "200px" }}
-          >
-            Loading...
-          </div>
-        )}
+      <div ref={ref} style={{ width: "100%", height: "100%" }}>
+        <img
+          alt={alt}
+          src={isLoaded ? src : blurredSrc}
+          className={`object-cover object-center w-full h-full transition-all duration-500 ease-in-out ${isLoaded ? 'blur-0' : 'blur-md'}`}
+        />
       </div>
     );
   };
