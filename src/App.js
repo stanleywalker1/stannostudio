@@ -30,7 +30,7 @@ function App() {
           <Route path='/mitmedialab' element={<MIT />} />
         </Routes>
         <Routes>
-          <Route path='/' element={<GalleryNavbar />} />
+          {/* <Route path='/' element={<GalleryNavbar />} /> */}
           <Route path='/exploration' element={<GenAIContent />} />
         </Routes>
         <Routes>
