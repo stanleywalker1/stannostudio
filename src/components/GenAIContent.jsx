@@ -363,14 +363,16 @@ const GenAIContent = () => {
 
             </div>
             </section>
+            
 
             <div className='mt-[80px] pb-5 pl-7 pr-7 sm:text-right text-1xl font-bold font-mono'>
-              <p>made with runwayML</p>
+           
+              <p> a gallery of moments in my life / made with tools provided by RunwayML</p>
             </div>
 
             <div className="max-w-[1000px] w-full flex justify-around pb-20">
                 <div>
-                <p className='paragraph sm:text-left text-1xl pr-4 font-mono text-gray-400'>
+                <p className='paragraph text-1xl sm:text-right font-mono text-gray-400'>
                 more on twitter @stannostudio
                 </p>
                 </div>
