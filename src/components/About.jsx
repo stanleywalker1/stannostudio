@@ -41,12 +41,12 @@ const About = () => {
                 </div>
                 <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                    <div className='sm:text-right text-2xl font-mono'>
-                   <p>Building digital and physical products</p>
+                   <p>Building for digital and physical</p>
                   
                 </div>
                 <div>
-                    <p className='font-mono py-3'>some favorite tools include WebGL, AR, data visualization, and generative AI.</p>
-                    <p className='font-mono py-3'>Current: AI @ Cornell | Former NYU Shanghai, DJI Global, Yambo Studio </p>
+                    {/* <p className='font-mono py-3'>Web Develepemnt, Wearable Tech, WebGL, AR, and generative AI.</p> */}
+                    <p className='font-mono py-3'>Current: Ello.com | Former:  AI at Cornell Univeristy, Interactive Media at NYU Shanghai, DJI Technology, Yambo Studio, etc. </p>
                 
                 </div>
 
@@ -116,7 +116,7 @@ const About = () => {
             </div>
             </section>
             <div>
-                  <p className='text-center font-mono py-3'> New York City - Shanghai - Tel Aviv</p>
+                  {/* <p className='text-center font-mono py-3'> New York City - Shanghai - Tel Aviv</p> */}
                 </div>
             
         </div>
