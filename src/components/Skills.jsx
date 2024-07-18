@@ -1,7 +1,7 @@
 import React from "react";
 // import HTML from '../assets/html.png'
-import ADB from "../assets/adobe.png";
-import CSS from "../assets/css.png";
+import Hacking from "../assets/Growthhacking.png";
+import Figma from "../assets/figma.png";
 import GITHUB from "../assets/github.png";
 import HF from "../assets/hf-logo.png";
 import JAVASCRIPT from "../assets/javascript.png";
@@ -37,8 +37,8 @@ const Skills = () => {
             <p className="my-4">REACT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={CSS} alt="CSS"></img>
-            <p className="my-4">CSS</p>
+            <img className="w-20 mx-auto" src={Hacking} alt="CSS"></img>
+            <p className="my-4">Growth hacking</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img
@@ -61,8 +61,8 @@ const Skills = () => {
             <p className="my-4">P5</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={ADB} alt="Adobe"></img>
-            <p className="my-4">ADOBE APPS</p>
+            <img className="w-20 mx-auto" src={Figma} alt="Adobe"></img>
+            <p className="my-4">FIGMA</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={TWEET} alt="Twitter API"></img>
