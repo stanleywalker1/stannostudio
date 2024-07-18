@@ -321,7 +321,7 @@ const Projects = () => {
           >
             <div className="opacity-0 text-center group-hover:opacity-100">
               <span className="text-2xl  font-bold text-white tracking-wider">
-                LedgerPad - NYU Innovation Course Product
+                NYU Innovation Product - LedgerPad
               </span>
               <div className="pt-8 text-center">
                 <a href="https://docs.google.com/presentation/d/138l7QXOH2RAtbRY_cB6eVd0q2ElzDSUg434O8_7VkRo/edit?usp=sharing">
