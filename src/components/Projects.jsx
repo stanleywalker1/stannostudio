@@ -92,7 +92,7 @@ const Projects = () => {
               </span>
               <div className="pt-8 text-center">
                 <a
-                  href="https://www.infinitecanvas.live/"
+                  href="https://www.youtube.com/watch?v=Ec2Onkdgkn8"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
