@@ -341,7 +341,7 @@ const Projects = () => {
             {/* hover effect */}
             <div className="opacity-0 text-center group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
-                Synth#Boi WebGL
+                Synth#Boi Landing Page
               </span>
               <div className="pt-8 text-center">
                 <a
